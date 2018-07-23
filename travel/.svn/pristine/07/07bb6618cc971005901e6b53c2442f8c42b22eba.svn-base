@@ -1,0 +1,29 @@
+html,body {height: 100%;}
+/*头部*/
+.CRMtop {
+	height: 12%;
+	background-color: #ccc;
+}
+
+/*左侧*/
+.CRMleft {
+	height: 88%;
+	border-right: 1px solid #ccc;
+}
+.CRMleft .left-nav li {
+	padding: 10px ;
+	text-align: center;
+
+}
+.CRMleft .left-nav li>a {
+	
+}
+/*中间*/
+.CRMmain {
+	height: 88%;
+	padding: 20px 20px;
+}
+
+.CRMmain table thead>tr{
+	background-color: skyblue;
+}

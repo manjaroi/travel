@@ -1,0 +1,45 @@
+<link rel="stylesheet" type="text/css" href="./css/manage-orders.css">
+<script type="text/javascript" src="js/manage-orders.js"></script>
+<div id="manage-orders">
+	<div class="order-search">
+		<input type="text" name="search" placeholder="搜索">
+	</div>
+	<div class="table-box">
+		<table class="table table-bordered table-hover data-table">
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>用户</th>
+						<th>订单编号</th>
+						<th>团名</th>
+						<th>支付状态</th>
+						<th>时间</th>
+						<th colspan="2">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td>1</td>
+						<td>15980000000</td>
+						<td>5</td>
+						<td>法国三日游法国三日游法国三日游法国三日游法国三日游法国三日游法国三日游</td>
+						<td><span class="pay-status payed">已支付</span></td>
+						<td>2018-08-25</td>
+						<td colspan="2">操作</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>15980000011</td>
+						<td>6</td>
+						<td>意大利三日游</td>
+						<td><span class="pay-status unpayed">未支付</span></td>
+						<td>2018-08-25</td>
+						<td colspan="2">操作</td>
+					</tr> -->
+				</tbody>
+		</table>	
+	</div>
+	<div class="page-row">
+		<div class="page-box fr"></div>
+	</div>
+</div>

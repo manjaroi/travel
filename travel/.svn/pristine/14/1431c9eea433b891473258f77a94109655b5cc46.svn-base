@@ -1,0 +1,7 @@
+$(function(){
+	// ******************头部图片关闭***************************
+   	$('.delete').click(function(){
+     	$('#box').css("transform","translateY(-80px)");
+ 	})
+
+})

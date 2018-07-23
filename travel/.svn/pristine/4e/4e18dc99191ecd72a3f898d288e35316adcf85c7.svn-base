@@ -1,0 +1,21 @@
+var db = require("../db/dbHelper");
+module.exports = {
+	login : function(app){
+		app.post("/login",function(req,res){
+			let data = {
+                name: req.body.username,
+                password: req.body.password
+            }
+	            let sql = `select * from user where phone = '${data.name}' and password = '${data.password}'` ;
+	          	db.mysql.execute(sql).then(function(result){
+	          		if(result.length > 0){
+	          			res.send({status:true});
+	          		}else {
+	          			res.send({status:false,msg:"用户名或密码错误"});
+	          		}
+	          	res.end();
+          	});
+ 		});
+	}
+	
+}

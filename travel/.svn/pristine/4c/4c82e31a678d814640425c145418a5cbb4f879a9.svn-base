@@ -1,0 +1,26 @@
+var db = require("../db/dbHelper");
+module.exports = {
+	getDatas : function(app){
+		app.post("/getDatas",function(req,res){
+			var params  = {
+				page : req.body.page,
+				qty : req.body.qty || 10
+			};
+			let start = (params.page - 1) * params.qty;
+			var sql = `select * from products limit ${start},${params.qty}`;
+			// var sql2 = "select count(*)total from products";
+			db.mysql.execute(sql).then(function(datas){
+				res.send(datas);
+			});
+ 		});
+	},
+	getCounts : function(app){
+		app.get("/counts",function(req,res){
+			var sql = `select count(*)total from products`;
+			db.mysql.execute(sql).then(function(datas){
+				res.send(datas);
+			});
+		});
+	}
+	
+}

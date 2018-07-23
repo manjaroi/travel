@@ -1,0 +1,280 @@
+body{
+	position: relative;
+	background-color: #F7F7F7;
+}
+#l_message{
+	width: 100%;
+	/*height: 2000px;*/
+	font-size: 12px;	
+}
+.l_write{
+	font-size: 14px;
+	color: #5E5E5E;
+	margin-top: 30px;
+}
+.container{
+	overflow: hidden;
+}
+.l_message_l{
+	float: left;
+	width: 868px;
+	margin-top: 10px;
+	background-color: #fff;
+	padding-bottom: 30px;
+}
+.l_message_l p{
+	margin-left: 28px;
+}
+.l_message_l p:nth-child(1){
+	margin-top: 20px;
+	font-size: 14px;
+	color: #333333;
+	font-weight: bold;
+}
+.l_message_l p:nth-child(2){
+	margin-top: 26px;
+}
+.l_message_l p:nth-child(3){
+	margin-top: 23px;
+}
+.l_message_l p:nth-child(4){
+	margin-top: 14px;
+}
+.l_message_l p:nth-child(5){
+	margin-top: 14px;
+}
+.l_message_l p:nth-child(1) span{
+	font-size: 12px;
+	color: #AEAEAE;
+	margin-left: 5px;
+	font-weight: normal;
+}
+#l_message .second p{
+	margin-top: 20px;
+}
+#l_message .second i{
+	margin-right: 5px;
+	color: red;
+}
+#l_message .second input{
+	width: 200px;
+	height: 20px;
+	margin-left: 20px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+}
+#l_message .third p:nth-child(2) span{
+	display: block;
+	width: 30px;
+	height: 30px;
+	background-color: #00AF67;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	font-weight: bold;
+	float: left;
+}
+#l_message .third p{
+	margin-top: 20px;
+}
+#l_message .third p:nth-child(2) i{
+	line-height: 30px;
+	margin-left: 20px;
+	color: #00AF67;
+}
+#l_message .third p:nth-child(3) input{
+	margin-left: 20px;
+	font-size: 12px;
+	height: 20px;
+	width: 150px;
+	border: 1px solid #ccc;
+}
+#l_message .third p:nth-child(4) select{
+	margin-left: 20px;
+	font-size: 12px;
+	height: 20px;
+	width: 50px;
+}
+#l_message .third p:nth-child(5) select{
+	margin-left: 20px;
+	font-size: 12px;
+	height: 20px;
+	width: 80px;
+}
+#l_message .third p:nth-child(5) input{
+	margin-left: 20px;
+	font-size: 12px;
+	height: 20px;
+	width: 150px;
+	border: 1px solid #ccc;
+}
+#l_message .forth input{
+	margin-left: 50px;
+}
+#l_message .forth span{
+	margin-left: 10px;
+}
+#l_message .fifth span{
+	float: right;
+}
+#l_message .fifth input{
+	border: 1px solid #ccc;
+	width: 200px;
+	height: 30px;
+	font-size: 12px;
+}
+#l_message .fifth a{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	vertical-align: top;
+	background-color: #02AF68;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin-right: 20px;
+}
+#l_message .sixth textarea{
+	width: 808px;
+	height: 89px;
+	font-size: 12px;
+}
+#l_message .seventh span{
+	color: #5E5E5E;
+}
+#l_message .seventh{
+	padding-bottom: 0px;
+}
+#l_message .seventh p{
+	float: left;
+	width: 668px;
+	padding-bottom: 10px;
+}
+#l_message .seventh p span:nth-child(1) a{
+	color: #5E5E5E;
+}
+#l_message .seventh p span:nth-child(2){
+	float: right;
+}
+#l_message .seventh p span:nth-child(2) i:nth-child(1){
+	font-size: 16px;
+	margin-right: 10px;
+}
+#l_message .seventh p span:nth-child(2) i:nth-child(2){
+	font-size: 20px;
+	color: #F15D53;
+}
+#l_message .seventh p span:nth-child(2) i:nth-child(3){
+	margin-right: 10px;
+	font-size: 20px;
+	color: #F15D53;
+}
+#l_message .seventh .l_send{
+	display: inline-block;
+	width: 170px;
+	height: 56px;
+	background-color: #F15D53;
+	color: #fff;
+	text-align: center;
+	line-height: 56px;
+	font-size: 16px;
+}
+#l_message .eighth p{
+	font-size: 12px;
+}
+#l_message .eighth p:nth-child(2){
+	color: #777;
+}
+#l_message .eighth p:nth-child(3){
+	color: #777;
+}
+#foot{
+	height: 66px;
+	border-top: 2px solid #58bc58;
+} 
+#foot p{
+	font-size: 12px;
+	color: #666;
+	margin-top: 30px;
+}
+.l_message_r{
+	/*position: absolute;*/
+	width: 318px;
+	height: 219px;
+	float: right;
+	border: 2px solid #58bc58;
+}
+.l_message_r p{
+	margin-left: 10px;
+}
+.l_message_r p:nth-child(1){
+	margin-top: 10px;
+	font-size: 16px;
+}
+.l_message_r p:nth-child(2){
+	margin-top: 20px;
+	font-size: 16px;
+	border-bottom: 1px dashed #ccc;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+.l_message_r p:nth-child(2) span{
+	font-size: 12px;
+	font-weight: bold;
+}
+.l_message_r p:nth-child(2) span:nth-child(1){
+	float: left;
+}
+.l_message_r p:nth-child(2) span:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.l_message_r p:nth-child(3){
+	overflow: hidden;
+	margin-top: 10px;
+	color: #979966;
+}
+.l_message_r p:nth-child(3) span{
+	font-size: 12px;
+}
+.l_message_r p:nth-child(3) span:nth-child(1){
+	float: left;
+}
+.l_message_r p:nth-child(3) span:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.l_message_r p:nth-child(4){
+	overflow: hidden;
+	margin-top: 10px;
+	color: #979966;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #ccc;
+}
+.l_message_r p:nth-child(4) span{
+	font-size: 12px;
+}
+.l_message_r p:nth-child(4) span:nth-child(1){
+	float: left;
+}
+.l_message_r p:nth-child(4) span:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.l_message_r p:nth-child(5){
+	margin-top: 20px;
+}
+.l_message_r p:nth-child(5) span:nth-child(1){
+	color: #979966;
+}
+.l_message_r p:nth-child(5) span:nth-child(2){
+	float: right;
+	margin-right: 10px;
+}
+.l_message_r p:nth-child(5) span:nth-child(2) i{
+	color: #F86C5C;
+}
+.l_message_r p:nth-child(5) span:nth-child(2) i:nth-child(2){
+	font-size: 20px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<form>
+        <input type="file" name="photos" id="photos" multiple>
+        <input type="button" value="submit" id="btn">
+    </form>
+		
+		<!-- <form method="post" action="/upload" enctype="multipart/form-data" >
+	 		 	<input type="file" name="myfilename">
+	  			<input type="submit" value = "提交">
+		</form> -->
+	<script type="text/javascript">
+		$("#btn").click(function(e){
+			var fd = new FormData();
+			let file = document.querySelector('[type=file]').files[0];
+			fd.append("photos",file);
+			$.ajax({
+				url : "http://localhost:8080/upload",
+				type : "post",
+				data : fd,
+				contentType: false,
+                processData: false,
+				success : function(res){
+					console.log(res);
+				}
+			});
+			
+		});
+	</script>
+</body>
+</html>

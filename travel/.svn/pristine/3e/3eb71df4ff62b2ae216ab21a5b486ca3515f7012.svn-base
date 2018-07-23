@@ -1,0 +1,27 @@
+.produce_top {
+	width: 100%;
+	height: 50px;
+}
+.J_mainContent {
+	background-color: #fff;
+}
+
+.botton-row {
+	height: 50px;
+	width: 100%;
+	background-color: #ccc;
+}
+.botton-row .page-box {
+	width: 200px;
+	height: 50px;
+	float:right;
+	margin-right: 30px;
+	background-color: blue;
+}
+tbody {
+	height: 530px !important; 
+	overflow-x: hidden;
+}
+tbody td {
+	height: 51px;
+}

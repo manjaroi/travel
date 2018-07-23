@@ -1,0 +1,492 @@
+require.config({
+  paths : {
+    'jquery' : '../lib/jquery',
+    'http' : './httpclient1',
+  }
+})
+
+require(['jquery','http'],function($,http1){
+
+
+
+$(function(){
+// ***************************获取数据**************************** 
+
+   http.get('http://10.3.138.233:8080/travel?page=1&qty=26', {}, function(res){ 
+       if(res){
+      res.forEach(function(item,idx){
+          $('.trip').eq(idx).prop('id',item.id);
+          $('.trip').eq(idx)[0].children[0].children[0].src = item.imgurl;
+          $('.trip').eq(idx)[0].children[0].children[1].innerText= item.name;
+          $('.trip').eq(idx)[0].children[1].children[0].innerText= item.price;
+          $('.trip').eq(idx)[0].children[1].children[2].innerText= item.start_place;
+       })
+       }else{
+        alert("页面加载失败！");
+       }
+   });
+
+
+// ******************头部图片关闭***************************
+   $('.delete').click(function(){
+      $('#box').css("transform","translateY(-80px)");
+     })
+
+
+// ******************尾部图片关闭******************
+    var lpl = `translateX(${-window.innerWidth}px)` ;
+    console.log(lpl);
+    
+    $('.guanbi').click(function(){
+    $('.xidi')[0].style.transform = lpl;
+    setTimeout(function(){
+        $('.shany').css("transform","translateX(110px)")
+    }, 1000)
+    
+
+   })
+    $('.shany').click(function(){
+    $('.xidi').css("transform","translateX(0px)");
+    $('.shany').css("transform","translateX(-110px)")
+   
+    
+
+   })
+
+// ***************点击回顶部*******************
+     document.onscroll = function(){
+        if(window.pageYOffset>800){
+           $('.hdb')[0].style.display="block";
+        }else{
+           $('.hdb')[0].style.display="none";
+        }
+       }
+             $('.hdb').click(function(){
+
+               var timer = setInterval(function(){
+                    var y = window.scrollY;
+                    var speed = parseInt(y/5);
+                     y -= speed;
+                    if(speed <= 10){
+                       
+                        clearInterval(timer);
+                        
+                        y = 0;
+                    }
+
+                    scrollTo(0,y);
+                    
+                },30)
+
+            })
+
+       
+// ************************轮播图****************************** 
+      var big = $('.big_price');
+      var small  = $('.small_price li');
+      var time =null;
+      var dixx = 1;
+        for(var j=0;j<small.length;j++){
+         if(j==0){
+            small.eq(j).addClass('class_name');
+         }else{
+             small.eq(j).removeClass('class_name');
+         }
+        }
+        function translate(idx){
+            
+         for(var j=0;j<small.length;j++){
+         if(j==idx){
+             small.eq(j).addClass('class_name');
+         }else{
+            small.eq(j).removeClass('class_name');
+         }
+        }
+        big[0].style.transform = `translateX(${690 * idx * -1}px)`;
+         
+        }
+        
+        
+        function start(){
+        
+         time = setInterval(function(){
+          translate(dixx);
+           dixx++;
+            if(dixx>=3){
+            dixx=0;
+             }
+        },3000)
+        }
+
+    function stop(){
+        window.clearInterval(time);
+    }
+    $('.small_price').click(function(e){
+          e = e || window.event;
+        for(var i=0;i<small.length;i++){
+            if(small.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+                translate(i);
+                start();
+                
+                }
+               }
+           })
+    var zuo = $('.big_price .zuoy');
+    var you = $('.big_price  .youy');
+     $('.big_price').click(function(e){
+          e = e || window.event;
+        for(var i=0;i<small.length;i++){
+            if(zuo.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+            if(dixx!=0){
+              dixx--;
+             }else{
+                dixx = 2;
+             }
+             translate(dixx);
+                start();
+             }
+             if(you.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+            if(dixx!=2){
+              dixx++;
+             }else{
+                dixx = 0;
+             }
+             translate(dixx);
+                start();
+                
+                }
+               }
+           })
+    start();     
+
+
+// **************************切换地区**************************************
+
+     var chuj = $('.chuj .fenl li');
+     chuj[0].children[0].style.display = "block";
+     chuj[0].children[1].style.color = "#00AF67";
+     chuj.eq(0).css("border-bottom","2px solid #00AF67");
+     var chuj_t = '.chuj .trip'; 
+     function qh_price(j,p,number,many){
+                 var j = j;
+            if(j%2 != 0){
+                   http.get('http://10.3.138.233:8080/travel?page=2&qty=9', {}, function(res){ 
+               if(res){
+                       console.log(chuj_t);
+                      res.forEach(function(item,idx){
+                     $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }else{
+             http.get('http://10.3.138.233:8080/travel?page=1&qty=9', {}, function(res){ 
+               if(res){
+                       console.log(res);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }
+     }
+     $('.chuj .fenl ').click(function(e){
+         e = e || window.event;
+         console.log(e.target);
+         
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<chuj.length;j++){
+
+           if(e.target.parentNode == chuj[j]){
+           chuj[j].children[0].style.display = "block";
+           chuj[j].children[1].style.color = "#00AF67";
+           chuj.eq(j).css("border-bottom","2px solid #00AF67");
+           qh_price(j,chuj_t);
+          }else{
+           chuj[j].children[0].style.display = "none";
+           chuj[j].children[1].style.color = "#000";
+           chuj.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+
+
+     var guon = $('.guon .fenl li'); 
+     var guon_t = '.guon .trip'
+     guon[0].children[0].style.display = "block";
+     guon[0].children[1].style.color = "#00AF67";
+     guon.eq(0).css("border-bottom","2px solid #00AF67");
+     $('.guon .fenl ').click(function(e){
+           e = e || window.event;
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<guon.length;j++){
+
+           if(e.target.parentNode == guon[j]){
+           guon[j].children[0].style.display = "block";
+           guon[j].children[1].style.color = "#00AF67";
+           guon.eq(j).css("border-bottom","2px solid #00AF67");
+           qh_price(j,guon_t);
+          }else{
+           guon[j].children[0].style.display = "none";
+           guon[j].children[1].style.color = "#000";
+           guon.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+     
+
+       function ddw_price(j,p,number,many){
+                 var j = j;
+            if(j%2 != 0){
+                   http.get('http://10.3.138.233:8080/travel?page=2&qty=4', {}, function(res){ 
+               if(res){
+                       console.log(chuj_t);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }else{
+             http.get('http://10.3.138.233:8080/travel?page=1&qty=4', {}, function(res){ 
+               if(res){
+                       console.log(res);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }
+     }
+     var ddw = $('.ddw .fenl li'); 
+     var zhoub_t = '.ddw .trip';
+     ddw[0].children[0].style.display = "block";
+     ddw[0].children[1].style.color = "#00AF67";
+     ddw.eq(0).css("border-bottom","2px solid #00AF67");
+     $('.ddw .fenl ').click(function(e){
+           e = e || window.event;
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<ddw.length;j++){
+
+           if(e.target.parentNode == ddw[j]){
+           ddw[j].children[0].style.display = "block";
+           ddw[j].children[1].style.color = "#00AF67";
+           ddw.eq(j).css("border-bottom","2px solid #00AF67");
+           ddw_price(j,zhoub_t);
+          }else{
+           ddw[j].children[0].style.display = "none";
+           ddw[j].children[1].style.color = "#000";
+           ddw.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+
+ var trip_sp =  $('.trip');
+  for(var i =0;i<trip_sp.length;i++){
+  trip_sp[i].onclick = function(){
+      if(this.tagName == "LI"){
+        var name = this.children[0].children[1].innerText;
+        var img = this.children[0].children[0].src;
+        var price = this.children[1].children[0].innerText;
+        var place = this.children[1].children[2].innerText;
+         window.location.href = `details.html?name=${name}&img=${img}&price=${price}&place=${place}`;
+
+      }
+    }   
+   }
+
+
+             let show = true;
+$('.j_port').click(function(){
+  http1.get('src/api/region.json').then(function(res){
+    let arr;
+    for(var key in res){
+      arr = res.regions;
+    }
+    let str = '';
+    str += arr.map(function(item,i){
+      if (item.hot == true) {
+        return `<a href="javascript:;">${item.name}</a>`;
+      }
+    }).join('')
+    $('.hotCities').html(str);
+
+    let word = 'ABCDEFGHJKLMNPQRSTWXYZ';
+    word = word.split('');
+    let word_html = '';
+    word_html += word.map(function(item, index) {
+      return `<a class="index j_index" href="#a${index}">${item}</a>`;
+    }).join("");
+
+    $('.cityIndexes').html(word_html);
+    let A = $('.cityIndexes').eq(0).find('span').eq(0);
+    A.addClass('on');
+    let city = $('.cityIndexes').eq(0).find('span');
+    $('.cityIndexes').mouseover(function(e){
+      let target = e.target;
+      $(target).addClass("on");
+      $(target).siblings().removeClass("on");
+    })
+  })
+  if (show) {
+    $('.layer').css('display','block');
+  }else if (!show) {
+    $('.layer').css('display','none');
+  }
+  show = !show;
+
+})
+
+http1.get('src/api/region.json').then(function(res){
+  let city_html = '';
+  let abc = '';
+  let arr1;
+  let word1 = 'ABCDEFGHJKLMNPQRSTWXYZ';
+  word1 = word1.split('');
+  for(var key in res){
+    arr1 = res.regions;
+  }
+
+  let arr2 = [];
+  let dd = '';
+  for(var i = 0;i < word1.length;i ++){
+    let dl = `<dl class="section j_section" id="a${i}"></dl>`;
+    dd = `<dd class="value"></dd>`
+    for(let key in res){
+      let arr = res['regions'];
+      city_html = arr.map(function(item,idx) {
+        var res = item.pinyin.slice(0, 1);
+        var area = item.regions;
+        if(item.municipality && res == word1[i]) {
+          return `<a href="javascript:;" data-letter="${item.pinyin}">${item.name}</a>`;
+        } else if(area) {
+          return area.map(function(item,idx) {
+            if(item.pinyin) {
+              var begin2 = item.pinyin.slice(0, 1);
+              if(begin2 == word1[i]) {
+                return `<a href="javascript:;" data-letter="${item.pinyin}">${item.name}</a>`;
+              }
+            }
+          }).join("");
+        }
+      }).join("");
+      arr2.push(city_html);
+    }
+
+
+    $('.scrollBody').append(dl);
+  }
+
+  
+
+
+
+
+  $('.j_section').each(function(idx,item){
+    $('<dt class="index">'+ word1[idx] +'</dt>').appendTo($(item));
+        // $(arr2[idx]).appendTo($(item));  
+      })
+
+
+  $('.j_section').append(dd);
+
+  $('.value').each(function(idx,item){
+    $(arr2[idx]).appendTo($(item));
+  })
+  $('.searchInput').focus(function(){
+    $('.searchPlaceholder').css('display','none');
+  })
+  $('.searchInput').blur(function(){
+    if ($('.searchInput').val() == '') {
+      $('.searchPlaceholder').css('display','block');
+    }
+  })
+
+  let search = '';
+  let arr3 = [];
+  $('.searchInput').bind('input propertychange',function(){
+    let input_value = $('.searchInput').val();
+    for(let i = 0;i < word1.length;i ++){
+      for(let key in res){
+        let arr = res['regions'];
+        search = arr.map(function(item,idx){
+          var res = item.pinyin.slice(0, i);
+                // console.log(res);
+                var area = item.regions;
+                if(input_value == res.toLowerCase() && input_value != '') {
+                  if (item.name != $('.searchResult').text()) {
+                    return `<a href="javascript:;">${item.name}</a>`;
+                  }
+                }else if (area) {
+                  return area.map(function(item,idx){
+                    if (typeof item.pinyin == 'string') {
+                      let str = item.pinyin.slice(0, i);
+                      if (input_value == str.toLowerCase() && input_value != '') {
+                        if (item.name != $('.searchResult').text()) {
+                          return `<a href="javascript:;">${item.name}</a>`;
+                        }
+                      }
+                    }
+                  }).join('');
+                }
+              }).join('');
+      }
+      arr3.push(search);
+      let arr4 = arr3[arr3.length-1]
+      // console.log(arr4);
+      $('.searchResult').append(arr3[arr3.length-1]);
+      $('.searchInput').keydown(function(){
+        $('.searchResult').html('');
+      })  
+
+    }
+  })
+})  
+
+
+  $('.icon-iconfontfuwushichang').mouseover(function(){
+    $(".zxkf").animate({left:'-110px'});
+  })
+  $('.icon-iconfontfuwushichang').mouseout(function(){
+    $(".zxkf").animate({left:'-160px'});
+  })
+  $('.icon-atm').mouseover(function(){
+    $(".ewm2").animate({left:'-110px'});
+  })
+  $('.icon-atm').mouseout(function(){
+    $(".ewm2").animate({left:'-160px'});
+  })
+
+
+
+
+})
+
+
+})

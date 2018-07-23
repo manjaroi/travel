@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>【康辉旅游网】康辉旅行社_出境旅游|国内旅游线路推荐_签证办理_酒店|机票预定</title>
+       <link rel="stylesheet" type="text/css" href="./css/index.css" />
+       <link rel="stylesheet" type="text/css" href="./css/base.css" />
+        <link rel="stylesheet" type="text/css" href="./lib/mt_font/iconfont.css" />
+        <script type="text/javascript" src="./js/common.js"></script>
+        <script type="text/javascript" src="./lib/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="./js/index.js"></script>
+    </head>
+    <body>
+    <div class="top_price">
+             <a href="javascript:;"><div class="delete">×</div></a>
+         </div>
+    <div id="box">
+
+      <div class="top">
+       <dl class="zhank zk1">
+        <dd><a href="">当地游</a></dd>
+        <dd><a href="">wifi/电话卡</a></dd>
+        <dd><a href="">当地用车</a></dd>
+        <dd class="zhank_rh"><a href="">票卷</a></dd>
+      </dl>
+      <dl class="zhank zk2">
+        <dd><a href="">国内自由行</a></dd>
+        <dd class="zhank_rh"><a href="">境内自由行</a></dd>
+      </dl>
+         
+        <div class="container">
+        <div class="top_bm">
+            <h1>康辉旅游唯一官方网站CCT.CN</h1>
+           
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">收藏本站</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li class="pp"><div class="app"></div><a href="#"><i></i>手机APP</a></li>
+                <li class="one"><div class="weixin"></div><a href="#"></a></li>
+                
+                <li class="two"><a href="#"></a></li>
+            </ul>
+             <p><span>请</span><a href="login.html">登录</a><span>或</span><a href="#">免费注册</a></p>
+        </div>
+        <div class="top_dh">
+            <div class="left fl">
+                <div class="tp">
+                    <img class="fl" src="imgs/mt_image/2.png" alt="" />
+                    <i></i>
+                   <select>
+
+            <option value="1">广州</option> 
+            <option value="1">深圳</option> 
+            <option value="1">上海</option>
+            <option value="1">北京</option> 
+            <option value="1">合肥</option> 
+            <option value="1">杭州</option>  
+         </select> 
+           <div class="sarch">
+
+               <input type="button" value="搜索" />
+               <input type="text"  placeholder="搜索国家、城市、产品" />
+               <div class="resou resou1">泰国</div>
+               <div class="resou resou2">俄罗斯</div>
+               
+           </div>
+                
+            </div>
+            <div class="bom">
+                    <ul>
+                        <li><a href="">首页</a></li>
+                        <li><a href="">出境游</a></li>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li class="ddiy"><a href=""> 当地玩乐</a><i></i></li>
+                        <li><a href="">全球签证</a></li>
+                        <li class="ziyouh"><a href="">
+                        
+                        自由行</a><i></i></li>
+                        <li><a href="">游轮</a></li>
+                        <li><a href="">留学</a></li>
+                        <li><a href="">置业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right fr"><a href="#"><img src="./imgs/mt_image/1.png" alt="" /></a></div>
+        
+            
+         </div>
+         </div>
+       </div>
+       <div class="nav">
+       <div class="container">
+           <div class="dht">
+               <ul>
+                    <li> <i></i>
+
+                       <div class="clearfix"><h1>周边游广州</h1></div> 
+                       <ul>
+                           <div class="ejdh">
+                               <h1>游玩天数</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">1日游</a></li>
+                                   <li><a href="goodslist.html">2日游</a></li>
+                                   <li><a href="goodslist.html">3日游</a></li>
+                               </ul>
+                                <h1>周边目的地</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">观海长廊</a></li>
+                                   <li><a href="goodslist.html">水都第一度假区</a></li>
+                               </ul>
+                           </div>  
+                           <li><a href="goodslist.html">广州</a></li>
+                           <li><a href="goodslist.html">广州</a></li>
+                           <li><a href="goodslist.html">广州</a></li>
+                           <li><a href="goodslist.html">广州</a></li>
+                           <li><a href="goodslist.html">广州..</a></li>
+                       </ul>
+                   </li>
+                   <li> 
+                   <div class="ejdh">
+                               <h1>游玩天数</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">1日游</a></li>
+                                   <li><a href="goodslist.html">2日游</a></li>
+                                   <li><a href="goodslist.html">3日游</a></li>
+                               </ul>
+                                <h1>周边目的地</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">观海长廊</a></li>
+                                   <li><a href="goodslist.html">水都第一度假区</a></li>
+                               </ul>
+                           </div> 
+                   <i></i>
+                   <div class="clearfix"><h1>热门推荐</h1></div>
+                           <ul>
+                           <li><a href="goodslist.html">泰国</a></li>
+                           <li class="remen"><a href="goodslist.html">泰国</a></li>
+                           <li><a href="goodslist.html">泰国</a></li>
+                           <li class="remen"><a href="goodslist.html">泰国</a></li>
+                           <li><a href="goodslist.html">泰国..</a></li>
+                       </ul>
+                   </li>
+                   <li> 
+                   <div class="ejdh">
+                               <h1>热门城市</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">上海</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                               </ul>
+                                <h1>周边城市</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">岳阳楼</a></li>
+                                   <li><a href="goodslist.html">黄鹤楼</a></li>
+                               </ul>
+                           </div> 
+                   <i></i>
+                       <div class="clearfix"><h1>国内旅游</h1></div>
+                       <ul>
+                           <li class="remen"><a href="goodslist.html">新疆</a></li>
+                           <li><a href="goodslist.html">新疆</a></li>
+                           <li><a href="goodslist.html">新疆</a></li>
+                           <li class="remen"><a href="goodslist.html">新疆</a></li>
+                           <li><a href="goodslist.html">新疆..</a></li>
+                       </ul>
+                   </li>
+                   <li> 
+                        <div class="ejdh">
+                               <h1>游玩天数</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">1日游</a></li>
+                                   <li><a href="goodslist.html">2日游</a></li>
+                                   <li><a href="goodslist.html">3日游</a></li>
+                               </ul>
+                                <h1>周边目的地</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">观海长廊</a></li>
+                                   <li><a href="goodslist.html">水都第一度假区</a></li>
+                               </ul>
+                           </div> 
+                       <i></i>
+                       <div class="clearfix" >
+                        <h1>东南亚</h1>
+                        <h1>海岛</h1>
+                        </div>
+                       
+                       <ul>
+                           <li class="remen"><a href="goodslist.html">越南</a></li>
+                           <li><a href="goodslist.html">越南</a></li>
+                           <li><a href="goodslist.html">越南</a></li>
+                           <li><a href="goodslist.html">越南</a></li>
+                       </ul>
+                   </li>
+                   <li>
+                       <div class="ejdh">
+                               <h1>游玩天数</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">1日游</a></li>
+                                   <li><a href="goodslist.html">2日游</a></li>
+                                   <li><a href="goodslist.html">3日游</a></li>
+                               </ul>
+                                <h1>周边目的地</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">观海长廊</a></li>
+                                   <li><a href="goodslist.html">水都第一度假区</a></li>
+                               </ul>
+                           </div> 
+                        <i></i>
+                       <div class="clearfix">
+                       <h1>日本</h1>
+                       <h1>港澳台</h1>
+                       </div>
+                       
+                       <ul>
+                           <li><a href="goodslist.html">香港</a></li>
+                           <li class="remen"><a href="goodslist.html">香港</a></li>
+                           <li><a href="goodslist.html">香港</a></li>
+                           <li><a href="goodslist.html">香港</a></li>
+                           <li><a href="goodslist.html">香港..</a></li>
+                       </ul>
+                   </li>
+                   <li> 
+                       <div class="ejdh">
+                               <h1>游玩天数</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">1日游</a></li>
+                                   <li><a href="goodslist.html">2日游</a></li>
+                                   <li><a href="goodslist.html">3日游</a></li>
+                               </ul>
+                                <h1>周边目的地</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">观海长廊</a></li>
+                                   <li><a href="goodslist.html">水都第一度假区</a></li>
+                               </ul>
+                           </div> 
+                        <i></i>
+                   <div class="clearfix"> 
+                       <h1>欧洲</h1>
+                       <h1>美国</h1>
+                       <h1>俄罗斯</h1>
+                       </div>
+                      
+                       <ul>
+                           <li><a href="goodslist.html">法国</a></li>
+                           <li><a href="goodslist.html">法国</a></li>
+                           <li><a href="goodslist.html">法国</a></li>
+                           <li><a href="goodslist.html">法国</a></li>
+                           <li><a href="goodslist.html">法国..</a></li>
+                       </ul>
+                   </li>
+                    <li> 
+                     <div class="ejdh">
+                               <h1>热门城市</h1>
+                               <ul class="clearfix">
+                                   <li><a href="goodslist.html">上海</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                               </ul>
+                                <h1>周边城市</h1>
+                               <ul class="clearfix">
+                                  
+                                   <li><a href="goodslist.html">广州</a></li>
+                                   <li><a href="goodslist.html">深圳</a></li>
+                                   <li><a href="goodslist.html">湛江</a></li>
+                                   <li><a href="goodslist.html">湖南</a></li>
+                                   <li><a href="goodslist.html">济南</a></li>
+                                   <li><a href="goodslist.html">合肥</a></li>
+                                   <li><a href="goodslist.html">江西</a></li>
+                                   <li><a href="goodslist.html">北京</a></li>
+                               </ul>
+                               <h1>周围景点</h1>
+                               <ul class="clearfix">
+                                   
+                                   <li><a href="goodslist.html">岳阳楼</a></li>
+                                   <li><a href="goodslist.html">黄鹤楼</a></li>
+                               </ul>
+                           </div> 
+                       <i></i>
+                       <div>
+                       <h1>澳新</h1>
+                       <h1>中东</h1>
+                       <h1>非洲</h1>
+                       </div>
+                       
+                       <ul>
+                           <li class="remen"><a href="goodslist.html">澳大利亚</a></li>
+                           <li><a href="goodslist.html">土耳其</a></li>
+                           <li><a href="goodslist.html">迪拜</a></li>
+                       </ul>
+                   </li>
+               </ul>
+           </div>
+
+           <div class="lbt">
+               
+               <ul class="big_price">
+                   <li><a href=""></a><div class="yidong yidong1">
+                   <div class="zuoy fl"><a href="javascript:;"> < </a></div>
+                   <div class="youy fr"><a href="javascript:;"> > </a></div>
+               </div></li>
+                   <li><a href=""></a><div class="yidong yidong2">
+                   <div class="zuoy fl"><a href="javascript:;"> < </a></div>
+                   <div class="youy fr"><a href="javascript:;"> > </a></div>
+               </div></li>
+                   <li><a href=""></a><div class="yidong yidong3">
+                   <div class="zuoy fl"><a href="javascript:;"> < </a></div>
+                   <div class="youy fr"><a href="javascript:;"> > </a></div>
+               </div></li>
+               </ul>
+               <ul class="small_price">
+                   <li><a href="javascript:;">玩转假日，乐不思暑</a></li>
+                   <li><a href="javascript:;"> <田园同心>荷兰，德国..</a></li>
+                   <li><a href="javascript:;">纯玩无自费精品线路</a></li>
+               </ul>
+           </div>
+
+           <div class="dzy">
+                   <ul class="sng">
+                       <li><a href="">
+                               <i></i>
+                               <h1>定制游</h1>
+                           </a></li>
+                       <li><a href="">
+                               <i></i>
+                               <h1>聚焦康辉</h1>
+                           </a></li>
+                       <li><a href="">
+                               <i></i>
+                               <h1>线下门店</h1>
+                           </a></li>
+                       <li><a href="">
+                               <i></i>
+                               <h1>企业定制游</h1>
+                           </a></li>
+                       <li><a href="">
+                               <i></i>
+                               <h1>蜂巢旅游</h1>
+                           </a></li>
+                       <li><a href="">
+                               <i></i>
+                               <h1>旅游攻略</h1>
+                           </a></li>
+                   </ul>
+               <div class="bom">
+                   <ul>
+                       <li><i></i>
+                           <h1>服务保障</h1>
+                           <h2>专属客服服务</h2>
+                           <h2>随时随地轻松出行</h2>
+                       </li>
+                      <li><i></i>
+                           <h1>服务保障</h1>
+                           <h2>专属客服服务</h2>
+                           <h2>随时随地轻松出行</h2>
+                       </li>
+                       <li><i></i>
+                           <h1>服务保障</h1>
+                           <h2>专属客服服务</h2>
+                           <h2>随时随地轻松出行</h2>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+       </div>
+    <div class="youwan">
+        <div class="container">
+        <div class="chuj">
+            <div class="fenl">
+            <img class="fl zuo" src="./imgs/mt_image/cj.png" alt="" />
+            <ul class="fl">
+                <li><i></i><a href="javascript:;">泰国</a></li>
+                <li><i></i><a href="javascript:;">日本</a></li>
+                <li><i></i><a href="javascript:;">东南亚</a></li>
+                <li><i></i><a href="javascript:;">欧洲</a></li>
+                <li><i></i><a href="javascript:;">美国</a></li>
+            </ul>
+            <div class="rig"><a href=""> 全部出境游路线<i></i></a>
+           </div>
+           </div>
+            <ul>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip zuiy"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip_p zuiy"><a href=""><img src="imgs/mt_image/1.1.png" alt="" /></a>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <div class="guon">
+            <div class="fenl">
+            <img class="fl zuo" src="./imgs/mt_image/cj1.png" alt="" />
+            <ul class="fl">
+                <li><i></i><a href="javascript:;">新疆</a></li>
+                <li><i></i><a href="javascript:;">青海</a></li>
+                <li><i></i><a href="javascript:;">西藏</a></li>
+                <li><i></i><a href="javascript:;">海南</a></li>
+                <li><i></i><a href="javascript:;">北京</a></li>
+                <li><i></i><a href="javascript:;">江浙沪</a></li>
+                <li><i></i><a href="javascript:;">湖南</a></li>
+            </ul>
+            <div class="rig"><a href=""> 全部国内游线路<i></i></a>
+           </div>
+                
+            </div>
+            <ul>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip zuiy"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip_p zuiy"><a href=""><img src="imgs/mt_image/1.2.png" alt="" /></a>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <div class="zhoub">
+            <div class="fenl">
+            <img class="fl zuo" src="./imgs/mt_image/cj2.png" alt="" />
+                
+            </div>
+            <ul>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip_p zuiy"><a href=""><img src="imgs/mt_image/1.3.png" alt="" /></a>
+                </li>
+
+
+            </ul>
+         </div>
+        <div class="ddw">
+            <div class="fenl">
+            <img class="fl zuo" src="./imgs/mt_image/cj3.png" alt="" />
+            <ul class="fl">
+                <li><i></i><a href="javascript:;">广州</a></li>
+                <li><i></i><a href="javascript:;">北京</a></li>
+                <li><i></i><a href="javascript:;">黄山</a></li>
+                <li><i></i><a href="javascript:;">昆明</a></li>
+                <li><i></i><a href="javascript:;">西安</a></li>
+                <li><i></i><a href="javascript:;">桂林</a></li>
+                <li><i></i><a href="javascript:;">西藏</a></li>
+                <li><i></i><a href="javascript:;">香港</a></li>
+            </ul>
+              <div class="rig"><a href=""> 全部当地玩乐路线<i></i></a>
+           </div>   
+            </div>
+            <ul>
+                <li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li><li class="trip"><a href="javascript:;"><img src="imgs/mt_image/5.png" alt="" /><p>
+       的撒娇了大师德鲁克萨默德萨穆迪卡梅萨里看到美丽萨科曼德拉马萨兰德酷马上离开地面雷克萨曼德拉卡梅斯柯达mask茅塞顿开里面萨克拉玛达</p></a>
+                <div class="bom">
+                <div class="price">1228</div>
+                <h1>起</h1>
+                <h2>广州出发</h2>
+                </div>
+                </li>
+                <li class="trip_p zuiy"><a href=""><img src="imgs/mt_image/1.4.png" alt="" /></a>
+                </li>
+
+
+            </ul>
+         </div>
+         <div class="qianz">
+          <div class="fenl">
+            <img class="fl zuo" src="./imgs/mt_image/cj4.png" alt="" />
+             <div class="rig"><a href=""> 全部签证<i></i></a>
+           </div>
+                
+            </div>
+          
+             <img class="qz" src="imgs/mt_image/qz.png" alt="" />
+    
+             
+         </div>
+    </div>
+    </div>
+    <div class="bottom">
+    <div class="container clearfix">        
+             <div class="shang">
+             </div>
+            <div class="l_foot_l clearfix">
+                <div class="l_foot_l_l clearfix">
+                    <dl class="first">
+                        <dt>关于康辉</dt>
+                        <dd><a href="">关于我们</a></dd>
+                        <dd><a href="">商务合作</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+                        <dd><a href="">加入我们</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>旅游服务</dt>
+                        <dd><a href="">出境游</a></dd>
+                        <dd><a href="">国内游</a></dd>
+                        <dd><a href="">签证</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>旅游攻略</dt>
+                        <dd><a href="">签证攻略</a></dd>
+                        <dd><a href="">旅游百科</a></dd>
+                        <dd><a href="">目的地攻略</a></dd>
+                        <dd><a href="">国内景点攻略</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>用户帮助</dt>
+                        <dd><a href="">预订流程</a></dd>
+                        <dd><a href="">支付方式</a></dd>
+                        <dd><a href="">投诉建议</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>网站条款</dt>
+                        <dd><a href="">服务协议</a></dd>
+                        <dd><a href="">版权指引</a></dd>
+                        <dd><a href="">隐私政策</a></dd>
+                    </dl>
+                </div>
+                <div class="l_foot_l_r">
+                    <p>客户服务热线</p>
+                    <p>4000-198-198</p>
+                    <p>工作时间:08:00-20:00</p>
+                    <a href="javascript:;"><span>康辉在线客服</span></a>
+                </div>
+                <div class="l_logo fr">
+                    <img src="./imgs/mt_image/l_15.png" alt="">
+                    <p>下载康辉旅游APP</p>
+                </div>
+            </div>
+            <div class="foot_diqu clearfix">
+                <h1 class="one" >广州康辉</h1>
+                <ul class="clearfix">
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                    <li><a href="">广州康辉</a></li>
+                </ul>
+                <h1>云南旅游</h1>
+                 <ul class="clearfix">
+                     <li><a href="">云南旅游</a></li>
+                     <li><a href="">云南旅游</a></li>
+                     <li><a href="">云南旅游</a></li>
+                     <li><a href="">云南旅游</a></li>
+                     <li><a href="">云南旅游</a></li>
+                 </ul>
+                 <h1>旅游攻略</h1>
+                  <ul class="clearfix">
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                      <li><a href="">旅游攻略</a></li>
+                  </ul>
+            </div>
+             <ul class="food_yqlj clearfix">
+             <li><a href="">友情链接:</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             <li><a href="">中国旅游排行</a></li>
+             </ul>
+            <div class="l_foot_b clearfix">
+                <div>
+                    <i class="icon icon1"></i>
+                    <span>亚太旅游协会会员</span>
+                </div>
+                <div>
+                    <i class="icon icon2"></i>
+                    <span>国际航空运输协会会员</span>
+                </div>
+                <div>
+                    <i class="icon icon3"></i>
+                    <span>中国旅行社协会会长单位</span>
+                </div>
+                <div>
+                    <i class="icon icon4"></i>
+                    <span>企业经营电子执照</span>
+                </div>
+                <div>
+                    <i class="icon icon5"></i>
+                    <span>不良信息举报中心</span>
+                </div>
+                <div>
+                    <i class="icon icon6"></i>
+                    <span>360网站健康检测</span>
+                </div>
+                <div>
+                    <i class="icon icon7"></i>
+                    <span class="last">诚信网站</span>
+                </div>
+            </div>
+            <p class="l_foot_p">
+                Copyright © 1985-2018 CCT.CN 中国康辉旅游 旅行社业务经营许可证号 L-BJ-CJ00011 , 京公安网备11010502026849 京ICP备17021196号-2
+            </p>
+        </div>
+       
+        
+    </div>
+    
+    </div>
+    <div class="xidi">
+    <img src="./imgs/mt_image/xidi.png" alt="" />
+    <a href="javascript:;"><div class="guanbi"> ×</div></a>
+    </div>
+    <div class="shany"><img src="imgs/mt_image/shany.png" alt="" /></div>
+    <ul class="mt_right">
+        <li class="iconfont icon-iconfontfuwushichang">
+        <div class="zxkf">在线客服</div>
+        <a href="javascript:;"></a></li>
+        <li class="iconfont icon-atm"><img class="ewm2" src="imgs/mt_image/ewm2.png" alt="" /><a href="javascript:;"></a></li>
+        <li class="hdb"><a href="javascript:;">v</a></li>
+    </ul>  
+    </body>
+</html>

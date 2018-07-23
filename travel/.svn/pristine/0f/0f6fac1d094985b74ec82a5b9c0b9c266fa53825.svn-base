@@ -1,0 +1,318 @@
+$(function(){
+// ***************************获取数据****************************
+   http.get('http://10.3.138.233:8080/travel?page=1&qty=26', {}, function(res){ 
+       if(res){
+      res.forEach(function(item,idx){
+          $('.trip').eq(idx).prop('id',item.id);
+          $('.trip').eq(idx)[0].children[0].children[0].src = item.imgurl;
+          $('.trip').eq(idx)[0].children[0].children[1].innerText= item.name;
+          $('.trip').eq(idx)[0].children[1].children[0].innerText= item.price;
+          $('.trip').eq(idx)[0].children[1].children[2].innerText= item.start_place;
+       })
+       }else{
+        alert("页面加载失败！");
+       }
+   });
+
+
+// ******************头部图片关闭***************************
+   $('.delete').click(function(){
+      $('#box').css("transform","translateY(-80px)");
+     })
+
+
+// ******************尾部图片关闭******************
+    var lpl = `translateX(${-window.innerWidth}px)` ;
+    console.log(lpl);
+    
+    $('.guanbi').click(function(){
+    $('.xidi')[0].style.transform = lpl;
+    setTimeout(function(){
+        $('.shany').css("transform","translateX(110px)")
+    }, 1000)
+    
+
+   })
+    $('.shany').click(function(){
+    $('.xidi').css("transform","translateX(0px)");
+    $('.shany').css("transform","translateX(-110px)")
+   
+    
+
+   })
+
+// ***************点击回顶部*******************
+     document.onscroll = function(){
+        if(window.pageYOffset>800){
+           $('.hdb')[0].style.display="block";
+        }else{
+           $('.hdb')[0].style.display="none";
+        }
+       }
+             $('.hdb').click(function(){
+
+               var timer = setInterval(function(){
+                    var y = window.scrollY;
+                    var speed = parseInt(y/5);
+                     y -= speed;
+                    if(speed <= 10){
+                       
+                        clearInterval(timer);
+                        
+                        y = 0;
+                    }
+
+                    scrollTo(0,y);
+                    
+                },30)
+
+            })
+
+       
+// ************************轮播图****************************** 
+      var big = $('.big_price');
+      var small  = $('.small_price li');
+      var time =null;
+      var dixx = 1;
+        for(var j=0;j<small.length;j++){
+         if(j==0){
+            small.eq(j).addClass('class_name');
+         }else{
+             small.eq(j).removeClass('class_name');
+         }
+        }
+        function translate(idx){
+            
+         for(var j=0;j<small.length;j++){
+         if(j==idx){
+             small.eq(j).addClass('class_name');
+         }else{
+            small.eq(j).removeClass('class_name');
+         }
+        }
+        big[0].style.transform = `translateX(${690 * idx * -1}px)`;
+         
+        }
+        
+        
+        function start(){
+        
+         time = setInterval(function(){
+          translate(dixx);
+           dixx++;
+            if(dixx>=3){
+            dixx=0;
+             }
+        },3000)
+        }
+
+    function stop(){
+        window.clearInterval(time);
+    }
+    $('.small_price').click(function(e){
+          e = e || window.event;
+        for(var i=0;i<small.length;i++){
+            if(small.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+                translate(i);
+                start();
+                
+                }
+               }
+           })
+    var zuo = $('.big_price .zuoy');
+    var you = $('.big_price  .youy');
+     $('.big_price').click(function(e){
+          e = e || window.event;
+        for(var i=0;i<small.length;i++){
+            if(zuo.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+            if(dixx!=0){
+              dixx--;
+             }else{
+                dixx = 2;
+             }
+             translate(dixx);
+                start();
+             }
+             if(you.eq(i)[0]==e.target.parentNode){
+                stop();
+                dixx = i;
+            if(dixx!=2){
+              dixx++;
+             }else{
+                dixx = 0;
+             }
+             translate(dixx);
+                start();
+                
+                }
+               }
+           })
+    start();     
+
+
+// **************************切换地区**************************************
+
+     var chuj = $('.chuj .fenl li');
+     chuj[0].children[0].style.display = "block";
+     chuj[0].children[1].style.color = "#00AF67";
+     chuj.eq(0).css("border-bottom","2px solid #00AF67");
+     var chuj_t = '.chuj .trip'; 
+     function qh_price(j,p,number,many){
+                 var j = j;
+            if(j%2 != 0){
+                   http.get('http://10.3.138.233:8080/travel?page=2&qty=9', {}, function(res){ 
+               if(res){
+                       console.log(chuj_t);
+                      res.forEach(function(item,idx){
+                     $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }else{
+             http.get('http://10.3.138.233:8080/travel?page=1&qty=9', {}, function(res){ 
+               if(res){
+                       console.log(res);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }
+     }
+     $('.chuj .fenl ').click(function(e){
+         e = e || window.event;
+         console.log(e.target);
+         
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<chuj.length;j++){
+
+           if(e.target.parentNode == chuj[j]){
+           chuj[j].children[0].style.display = "block";
+           chuj[j].children[1].style.color = "#00AF67";
+           chuj.eq(j).css("border-bottom","2px solid #00AF67");
+           qh_price(j,chuj_t);
+          }else{
+           chuj[j].children[0].style.display = "none";
+           chuj[j].children[1].style.color = "#000";
+           chuj.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+
+
+     var guon = $('.guon .fenl li'); 
+     var guon_t = '.guon .trip'
+     guon[0].children[0].style.display = "block";
+     guon[0].children[1].style.color = "#00AF67";
+     guon.eq(0).css("border-bottom","2px solid #00AF67");
+     $('.guon .fenl ').click(function(e){
+           e = e || window.event;
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<guon.length;j++){
+
+           if(e.target.parentNode == guon[j]){
+           guon[j].children[0].style.display = "block";
+           guon[j].children[1].style.color = "#00AF67";
+           guon.eq(j).css("border-bottom","2px solid #00AF67");
+           qh_price(j,guon_t);
+          }else{
+           guon[j].children[0].style.display = "none";
+           guon[j].children[1].style.color = "#000";
+           guon.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+     
+
+       function ddw_price(j,p,number,many){
+                 var j = j;
+            if(j%2 != 0){
+                   http.get('http://10.3.138.233:8080/travel?page=2&qty=4', {}, function(res){ 
+               if(res){
+                       console.log(chuj_t);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }else{
+             http.get('http://10.3.138.233:8080/travel?page=1&qty=4', {}, function(res){ 
+               if(res){
+                       console.log(res);
+                      res.forEach(function(item,idx){
+                      $(p).eq(idx).prop('id',item.id);
+                      $(p).eq(idx)[0].children[0].children[0].src = item.imgurl;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.name;
+                      $(p).eq(idx)[0].children[1].children[0].innerText= item.price;
+                      $(p).eq(idx)[0].children[1].children[2].innerText= item.start_place;
+                        })
+                    }
+           });
+         }
+     }
+     var ddw = $('.ddw .fenl li'); 
+     var zhoub_t = '.ddw .trip';
+     ddw[0].children[0].style.display = "block";
+     ddw[0].children[1].style.color = "#00AF67";
+     ddw.eq(0).css("border-bottom","2px solid #00AF67");
+     $('.ddw .fenl ').click(function(e){
+           e = e || window.event;
+           if(e.target.tagName == "A"){ 
+           for(var j = 0;j<ddw.length;j++){
+
+           if(e.target.parentNode == ddw[j]){
+           ddw[j].children[0].style.display = "block";
+           ddw[j].children[1].style.color = "#00AF67";
+           ddw.eq(j).css("border-bottom","2px solid #00AF67");
+           ddw_price(j,zhoub_t);
+          }else{
+           ddw[j].children[0].style.display = "none";
+           ddw[j].children[1].style.color = "#000";
+           ddw.eq(j).css("border-bottom","none"); 
+          }
+          }
+       }
+     
+     })
+
+ var trip_sp =  $('.trip');
+  for(var i =0;i<trip_sp.length;i++){
+  trip_sp[i].onclick = function(){
+      if(this.tagName == "LI"){
+        var name = this.children[0].children[1].innerText;
+        var img = this.children[0].children[0].src;
+        var price = this.children[1].children[0].innerText;
+        var place = this.children[1].children[2].innerText;
+         window.location.href = `details.html?name=${name}&img=${img}&price=${price}&place=${place}`;
+
+      }
+    }   
+   }
+
+
+
+
+
+
+
+})

@@ -1,0 +1,18 @@
+document.addEventListener('DOMContentLoaded',function(){
+	let username = document.querySelector('.username');
+	let password = document.querySelector('.input2');
+	let btn = document.querySelector('.r-btn');
+	btn.onclick = function(){
+		_username = username.value;
+		_password = password.value;
+		let params = {username : _username,password : _password}
+		$.ajax({
+			api : 'http://10.3.138.233:8080/login',
+			params,
+			method : 'post',
+			success : function(res){
+				console.log(res);
+			}
+		})
+	}
+})

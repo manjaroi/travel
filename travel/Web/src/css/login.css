@@ -1,0 +1,167 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    font-size:12px;
+}
+.oyw_top .container{
+   /* height: 70px;
+    background:red;*/
+}
+.oyw_top-l{
+    height: 70px;
+    width: 182px;
+    background:url(../imgs/l_16.png) no-repeat;
+}
+
+.oyw_top-r{
+    height: 70px;
+    width: 480px;
+ 
+}
+.oyw_top-r li{
+    float:left;
+}
+.oyw_top-r li a{
+    display:block;
+    width: 120px;
+    height:70px;
+    color:#A699B3;
+    font-size: 16px;
+ 
+    line-height:70px;
+    text-align:center;
+}
+.oyw_top-r li:hover a{
+    color:#02AF68;
+}
+.oyw_banner{
+    position:relative;
+    min-width:1200px;
+    height: 630px;
+    background: url(//s.cctcdn.com/w/1611/i/account/pageBody.jpg?v=38c0a7) 50% 0 no-repeat #a1acbe;
+}
+.oyw_banner .box{
+    width:370px;
+    height: 410px;
+    background:#fff;
+    position:absolute;
+    right:300px;
+    top: 72px;
+    padding-left:30px;
+    padding-top:30px;
+    border-radius:8px;
+}
+.oyw_banner .before{
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    width: 276px;
+    height: 118px;
+    background: url(//s.cctcdn.com/w/1611/i/account/pageBodyText.png?v=ead8e8) 50% 0 no-repeat;
+}
+.oyw_banner h3{
+    font-size:16px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.oyw_banner .box-c{
+    display: block;
+    width: 320px;
+   /* margin-bottom:20px;*/
+}
+.oyw_banner .box-c .yzm{
+    width: 100px;
+    height: 40px;
+    background:#E9EBE8;
+    line-height:40px;
+    text-align:center;
+}
+.box-c input{
+    height: 30px;
+    border-bottom:1px solid #ccc;
+}
+.three{line-height:30px;margin-bottom: 10px;}
+.three a{height: 30px;}
+.sjyz{color:red;height: 36px;line-height:36px;}
+.sjyz span{display:none;}
+.mima{color:red;height: 36px;line-height:36px;}
+.mima span{display:none;}
+.username{
+    margin-top: 30px;
+}
+.username,.password{
+   width: 100%;
+}
+.input2,.input3{
+    width: 100%;
+    margin-top:10px;
+}
+.oyw_banner .box-c a{
+    color:#666666;
+}
+.oyw_banner .box .r-btn{
+    background:#02AF68;
+    height: 40px;
+    color:#fff;
+    line-height:40px;
+    text-align:center;
+    margin-bottom:0;
+    border-radius:4px;
+}
+.oyw_banner .box h4{
+    line-height:30px;
+    color:#999999;
+    margin-left:75px;
+}
+.oyw_banner .box h4 a{
+    color:#666666;
+
+}
+.oyw_banner .box p{
+    color:#999999;
+    line-height:30px;
+}
+.oyw_banner .box p a{
+    color:#666666;
+}
+.oyw_banner .box p a i{
+    margin-left:24px;
+}
+.oyw_banner .box p a span{
+    margin-right:10px;
+}
+.l_login{
+    font-weight: bold;
+    margin: 0 40px;
+    color: #aaa;
+}
+.oyw_banner .box .first{
+    color: #58bc58;
+}
+.l_forget{
+    float: right;
+}
+.l_others{
+    position: absolute;
+    bottom: 10px;
+}
+.icon{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-bottom:-5px;
+}
+.icon1{
+    background: url(../imgs/l_100.png) 0px -50px no-repeat;
+    line-height: 24px;
+}
+.icon2{
+    background: url(../imgs/l_100.png) -50px -50px no-repeat;
+    line-height: 24px;
+}
+.l_foot_p{
+    text-align: center;
+    margin-top: 60px;
+    color: #999;
+}
+

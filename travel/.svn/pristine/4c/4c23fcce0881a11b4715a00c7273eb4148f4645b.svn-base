@@ -1,0 +1,324 @@
+$(function(){
+
+
+
+
+
+// **********************吸顶菜单***********************************
+    $(window).on('scroll',function(){
+        
+        var x = window.scrollY;
+       
+        if(x >= 800){
+
+            $('.oyw_mounting')[0].style.display = 'block';
+
+        }else{
+
+            $('.oyw_mounting')[0].style.display = 'none';
+        }  
+
+
+        if(x>=1557 & x<=3870){
+            $('.timeline_mod').addClass('timeline0');
+        }else{
+             $('.timeline_mod').removeClass('timeline0');
+        }   
+    });
+
+
+
+   // ********************逻辑运算****************************************
+  
+
+    var j_sub = $('.j_sub');
+  
+    for(var i = 0;i<j_sub.length;i++){
+        
+        j_sub.eq(i).on('click',function(){
+
+              
+            var input = this.parentNode.children[1];
+            
+            var j_price = $('.price')[1].innerText;
+
+            $('.price')[0].innerText = j_price;
+
+
+            if(input.value > 0){
+                
+                input.value--;
+                 
+                var total = $('.num','.total')[0].innerText*1;
+                 
+                $(this).removeClass('disabled');
+                
+                total -= j_price*1;;
+
+                $('.num','.total')[0].innerText = total;
+                
+                $('.price1').html(total);
+            }
+         
+
+        });
+    }
+    var j_add = $('.j_add');
+    
+    
+    for(var i = 0;i<j_add.length;i++){
+        // console.log(i)
+        j_add.eq(i).on('click',function(){
+
+              
+            var input = this.parentNode.children[1];
+            
+            var j_price = $('.price')[1].innerText;
+            
+            var a = this.parentNode.children[0];
+
+                $('.price')[0].innerText = j_price;
+
+                input.value++;
+                
+                var total = $('.num','.total')[0].innerText*1;
+               
+                 total += j_price*1;
+
+                $('.num','.total')[0].innerText = total;
+                
+                $('.price1').html(total);
+
+                if(input.value > 0){
+
+                    $(a).removeClass('disabled');
+
+                }
+               
+        });
+    }
+
+
+
+
+
+ 
+
+
+         //***********************导航条切换*****************        
+                
+                //水平
+               
+               $('.oyw_ul').onePageNav(); 
+
+                //垂直  
+               $('.timeline_list').onePageNav();  
+
+
+
+        let search = window.location.search;
+       
+        search = search.slice(1);
+         
+         if(search.indexOf('name') == 0){
+
+            res1=search.split('&');
+                   
+            var obj={};
+
+             res1.forEach(function(item){
+
+                var arr = item.split('=');
+                      
+
+                obj[arr[0]]=decodeURI(arr[1]);
+
+            });
+
+                  
+            $('.main-c')[0].innerHTML = `<div class="main-cl fl"><img src="${obj.img}" alt="" / style="width:480px;height="320px";"></div><div class="main-cr fr"><h3>${obj.name}</h4><h5><em>参考价：</em><span  class="price">${obj.price}</span><em>起/人</em></h5><dl><dt>出 发 地</dt><dd class="place">${obj.place}</dd></dl><dl><dt>目 的 地</dt><dd>曼谷</dd><dd>芭提雅</dd><dd>沙美岛</dd></dl><dl><dt>相关服务</dt><dd>本产品由康辉集团北京国际旅行社有限公司提供相关服务</dd></dl><p class="p2"><i></i><span>康辉定制游</span><em>行程自己做主，时间无拘无束</em><a href="#">立即定制</a></p></div> `
+
+
+            $('.num','.total').html($('.price').text());
+
+            $('.price1').text($('.price').text());
+
+
+            
+            
+            
+
+            $('.btn1').click(function(){
+
+            let price = $('.price').eq(1).text();
+            let name = $('h3','.main-cr').text();
+            let place = $('.place').text();
+           
+            let num1 = $('#standard_count').val();
+
+            let num2 = $('#child_count').val();
+            
+            let num = num1*1 + num2*1;
+
+
+                console.log($('.btn1').attr('href','order.html?'+ 'name=' + name + '&place=' + place +'&num=' + num  + '&price=' + price));
+            })
+
+
+            $('.btn2').click(function(){
+
+                let price = $('.price').eq(1).text();
+
+                let name = $('h3','.main-cr').text();
+                let place = $('.place').text();
+               
+                let num1 = $('#standard_count').val();
+
+                let num2 = $('#child_count').val();
+                
+                let num = num1*1 + num2*1;
+                
+                console.log($('.btn2').attr('href','order.html?'+  'name=' + name + '&place=' + place +'&num=' + num  + '&price=' + price));
+            })
+         
+        }else{
+            
+            let storage = window.localStorage.getItem('key');
+           
+            if (typeof storage == 'string') {
+            
+            storage = JSON.parse(storage);
+            
+            let res = storage.map(function(item,i){
+                
+                if (item.id == search) {
+                     return `<div class="main-cl fl"><img src="${item.imgurl}" alt="" / style="width:480px;height="320px";"></div><div class="main-cr fr"><h3>${item.name}</h4><h5><em>参考价：</em><span  class="price">${item.price}</span><em>起/人</em></h5><dl><dt>出 发 地</dt><dd class="place">${item.start_place}</dd></dl><dl><dt>目 的 地</dt><dd>曼谷</dd><dd>芭提雅</dd><dd>沙美岛</dd></dl><dl><dt>相关服务</dt><dd>本产品由康辉集团北京国际旅行社有限公司提供相关服务</dd></dl><p class="p2"><i></i><span>康辉定制游</span><em>行程自己做主，时间无拘无束</em><a href="#">立即定制</a></p></div> `
+                }
+                    
+                    
+               
+            })
+        
+            $('.main-c').html(res); 
+
+
+             }
+            $('.num','.total').html($('.price').text());
+
+            $('.price1').text($('.price').text());
+
+           
+             $('.btn1').click(function(){
+
+                let price = $('.price').eq(1).text();    
+                let name = $('h3','.main-cr').text();
+                let place = $('.place').text();
+              
+                let num1 = $('#standard_count').val();
+
+                let num2 = $('#child_count').val();
+                
+                let num = num1*1 + num2*1;
+                 console.log(place)
+
+                console.log($('.btn1').attr('href','order.html?'+ 'name=' + name + '&place=' + place +'&num=' + num  + '&price=' + price));
+            })
+
+
+            $('.btn2').click(function(){
+
+                let price = $('.price').eq(1).text();
+                let name = $('h3','.main-cr').text();
+                let place = $('.place').text();
+               
+                let num1 = $('#standard_count').val();
+
+                let num2 = $('#child_count').val();
+                
+                let num = num1*1 + num2*1;
+                console.log(place)
+                
+                console.log($('.btn2').attr('href','order.html?'+  'name=' + name + '&place=' + place +'&num=' + num  + '&price=' + price));
+            })
+        }
+         
+        
+
+
+
+        
+
+
+
+
+
+            var uls = $('.uls');
+            
+            var b;
+            
+            var a = 0;
+            
+            $('.i2-btn').on('click',function(){
+                
+               
+                a++;
+                
+                b = a;
+                
+       
+                for(var i = 0;i<uls.length;i++){
+             
+                    uls.eq(i)[0].style.transform = `translateY(-${a*68}px)`;
+
+                }
+                
+               
+           
+      
+                if(a>=5){
+                    
+                    b = a - 1;
+                    
+                    a = 4;
+   
+                    for(var i = 0;i<uls.length;i++){
+             
+                        uls.eq(i)[0].style.transform = `translateY(-${a*68}px)`;
+
+                    }
+                }
+                console.log(a)
+                
+            });
+            
+            $('.i1-btn').on('click',function(){
+
+                b--;
+                 
+                for(var i = 0;i<uls.length;i++){
+             
+                    uls.eq(i)[0].style.transform = `translateY(-${b*68}px)`;
+                    
+
+                }
+      
+                if(b<=0){
+                     
+                    for(var i = 0;i<uls.length;i++){
+             
+                        uls.eq(i)[0].style.transform = "translateY(0px)";
+
+                    }
+                    
+                    b = 0;
+                    
+                }
+                a = b 
+
+            })
+
+             
+
+})
+
+

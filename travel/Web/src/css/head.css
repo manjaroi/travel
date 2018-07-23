@@ -1,0 +1,178 @@
+#citySwitch{
+    position: relative;
+    float: left;
+    margin: 10px 0 0 20px;
+    z-index: 9;
+}
+.port{
+	display: inline-block;
+    position: relative;
+    z-index: 2;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    color: #666;
+    font-size: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.port:before{
+	content: '\e7af';
+    display: inline-block;
+    width: 14px;
+    height: 20px;
+    margin: -5px 4px 0px 0;
+    color: #ff7d13;
+    vertical-align: 0;
+}
+.port .arrow{
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    margin: 0 3px 0 8px;
+    background: url(//s.cctcdn.com/w/1611/i/header/arrow.png?v=a55430);
+    vertical-align: 2px;
+}
+.layer{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    width: 470px;
+    padding: 15px 24px 23px;
+    border: 1px solid #e4e4e4;
+    background: #fff;
+    font-size: 12px;
+    line-height: 20px;
+}
+.hotCities {
+    margin-bottom: 10px;
+    padding-left: 6px;
+}
+.hotCities a {
+    margin-right: 16px;
+    color: #333;
+}
+.searchForm {
+    position: relative;
+    z-index: 1;
+    border: 1px solid #e4e4e4;
+    border-radius: 2px;
+    background: #f7f7f7;
+}
+.searchForm:before {
+    display: block;
+    content: '\e620';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 1;
+    height: 20px;
+    margin: -9px 0 0;
+    color: #aaa;
+    font-size: 18px;
+    line-height: 20px;
+}
+.searchInput {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: #333;
+    width: 100%;
+    height: 28px;
+    padding: 6px 26px 6px 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.searchPlaceholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #999;
+    line-height: 26px;
+}
+.cityIndexes {
+    display: table;
+    overflow: visible;
+    table-layout: fixed;
+    width: 100%;
+    height: 24px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.index {
+    display: table-cell;
+    position: relative;
+    box-sizing: content-box;
+    color: #333;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+#citySwitch .layer .cityIndexes .index.on, #citySwitch .layer .cityIndexes .index:hover {
+    color: #00af67;
+    font-size: 18px;
+}	
+#citySwitch .layer .cityIndexes .index.on:after, #citySwitch .layer .cityIndexes .index:hover:after {
+    content: '\0020';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0;
+    border-bottom: 1px solid #00af67;
+}
+#citySwitch .layer .scrollSet {
+    position: relative;
+    height: 214px;
+    padding: 0 10px 0 0;
+}
+#citySwitch .layer .scrollSet .scrollWrap {
+    overflow: hidden;
+    height: 100%;
+    overflow-y: auto;
+}
+#citySwitch .layer .scrollSet .scrollBody {
+    position: relative;
+}
+#citySwitch .layer .scrollSet .scrollBody .section {
+    padding: 0 0 12px 27px;
+}
+#citySwitch .layer .scrollSet .scrollBody .section .index {
+    float: left;
+    margin-left: -26px;
+    color: #ccc;
+}
+
+#citySwitch .layer .scrollSet .scrollBody .section .value {
+    /*float: left;*/
+    width: 100%;
+}
+#citySwitch .layer .scrollSet .scrollBody .section .value a {
+    display: inline-block;
+    margin-right: 18px;
+    color: #666;
+}
+
+.citySearch {
+    margin-bottom: 14px;
+}
+.layer .citySearch .searchResult{
+    overflow-x: auto;
+}
+.layer .citySearch .searchResult a {
+    margin-right: 4px;
+    padding: 2px 4px;
+    color: #666;
+    white-space: nowrap;
+}

@@ -1,0 +1,80 @@
+#manage-products {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+}
+.produce_top {
+	width: 100%;
+	height: 50px;
+}
+.J_mainContent {
+	background-color: #fff;
+}
+
+.botton-row {
+	height: 50px;
+	width: 100%;
+}
+.botton-row .page-box {
+	height: 50px;
+	float:right;
+	margin-right: 30px;
+	
+}
+.table-box {
+	height: 600px;
+	width: 100%;
+	margin-bottom: 30px;
+	overflow-x: hidden;
+}
+tbody {
+	overflow-x: hidden;
+}
+
+.pageBox li {
+	display: inline-block;
+	padding:7px 10px;
+	background-color: #fff;
+	border:1px solid #ccc;
+	margin-top: 6px;
+	margin-right: 3px;
+	cursor : pointer;
+}
+.pageBox li:hover{
+	background-color: #DDD;
+}
+.pageBox .active {
+	background-color: #DDD;
+}
+.mask {
+	width: 100%;
+	height:100%;
+	background-color: blue;
+	position: fixed;
+	background-color: rgba(125,125,125,.3);
+	top:0;
+	left:0;
+	display:none;
+}
+.mask .addForm {
+	padding: 20px;
+	width: 500px;
+	height: 490px;
+	background-color: #fff;
+	border: 2px solid black;
+	position: fixed;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	display:none;
+}
+.mask .addForm label {
+	font-size: 15px;
+	color: black;
+}
+.submitForm {
+	display: none;
+}
+.modifyForm {
+	display: none;
+}

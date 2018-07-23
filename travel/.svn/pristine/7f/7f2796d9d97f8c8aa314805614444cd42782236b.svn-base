@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/register.css" />
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+     <script type="text/javascript" src="./js/ajax.js"></script>
+    <script type="text/javascript" src="./js/register.js"></script>
+</head>
+<body>
+    <div class="oyw_top">
+        <div class="container clearfix">
+            <div class="oyw_top-l fl"></div>
+            <ul class="oyw_top-r fr">
+                <li><a href="#">回到首页</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">收藏本站</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="oyw_banner">
+            <i class="i1"></i>
+        <div class="box">
+            <h3>注册</h3>
+            <div class="box-c"><input type="text" class="username" placeholder="请输入手机号"/></div>
+            <div class="box-c">
+                <input type="text" class="input2" placeholder="不区分大小写"/>
+                <div class="yzm fr"></div>
+            </div>
+            <!-- <div class="box-c">
+                <input type="text" class="input3" placeholder="请输入手机验证码"/>
+                 <div class="yzm fr">获取验证码</div>
+            </div> -->
+            <div class="box-c"><input type="password" class="password" placeholder="请输入密码,6-20数字和字母"/></div>
+            <div class="box-c"><input type="checkbox" class="input5"/> 我已阅读并同意
+            <a href="#">《康辉旅游服务协议》</a>
+            </div>
+            <div class="box-c r-btn">注 册</div>
+            <h4>已有康辉账号? <a href="login.html">立即登录</a></h4>
+            <p>使用其他方式登录 
+                <a href="#"><i class="i2"></i><span>微信</span></a>
+                <a href="#"><i class="i3"></i><span>微博</span></a>
+            </p>
+        </div>
+
+    </div> 
+    <div class="oyw_footer">
+        <div id="footerCopyright">
+            <div class="main_body"> Copyright © 1985-2018 CCT.CN 中国康辉旅游 旅行社业务经营许可证号 L-BJ-CJ00011，京公安网备11010502026849 京ICP备17021196号-2 
+            </div> 
+        </div>
+    </div>
+</body>
+</html>

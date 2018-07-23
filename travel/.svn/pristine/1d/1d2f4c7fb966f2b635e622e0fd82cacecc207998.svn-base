@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/foot.css">
+</head>
+<body>
+	<!-- <div id="l_foot"> -->
+		<div class="container clearfix">
+			<div class="l_foot_l clearfix">
+				<div class="l_foot_l_l clearfix">
+					<dl class="first">
+						<dt>关于康辉</dt>
+						<dd>关于我们</dd>
+						<dd>商务合作</dd>
+						<dd>联系我们</dd>
+						<dd>加入我们</dd>
+					</dl>
+					<dl>
+						<dt>旅游服务</dt>
+						<dd>出境游</dd>
+						<dd>国内游</dd>
+						<dd>签证</dd>
+					</dl>
+					<dl>
+						<dt>旅游攻略</dt>
+						<dd>签证攻略</dd>
+						<dd>旅游百科</dd>
+						<dd>目的地攻略</dd>
+						<dd>国内景点攻略</dd>
+					</dl>
+					<dl>
+						<dt>用户帮助</dt>
+						<dd>预订流程</dd>
+						<dd>支付方式</dd>
+						<dd>投诉建议</dd>
+					</dl>
+					<dl>
+						<dt>网站条款</dt>
+						<dd>服务协议</dd>
+						<dd>版权指引</dd>
+						<dd>隐私政策</dd>
+					</dl>
+				</div>
+				<div class="l_foot_l_r">
+					<p>客户服务热线</p>
+					<p>4000-198-198</p>
+					<p>工作时间:08:00-20:00</p>
+					<a href="javascript:;"><span>康辉在线客服</span></a>
+				</div>
+				<div class="l_logo fr">
+					<img src="./imgs/l_15.png" alt="">
+					<p>下载康辉旅游APP</p>
+				</div>
+			</div>
+			<div class="l_foot_b clearfix">
+				<div>
+					<i class="icon icon1"></i>
+					<span>亚太旅游协会会员</span>
+				</div>
+				<div>
+					<i class="icon icon2"></i>
+					<span>国际航空运输协会会员</span>
+				</div>
+				<div>
+					<i class="icon icon3"></i>
+					<span>中国旅行社协会会长单位</span>
+				</div>
+				<div>
+					<i class="icon icon4"></i>
+					<span>企业经营电子执照</span>
+				</div>
+				<div>
+					<i class="icon icon5"></i>
+					<span>不良信息举报中心</span>
+				</div>
+				<div>
+					<i class="icon icon6"></i>
+					<span>360网站健康检测</span>
+				</div>
+				<div>
+					<i class="icon icon7"></i>
+					<span class="last">诚信网站</span>
+				</div>
+			</div>
+			<p class="l_foot_p">
+				Copyright © 1985-2018 CCT.CN 中国康辉旅游 旅行社业务经营许可证号 L-BJ-CJ00011 , 京公安网备11010502026849 京ICP备17021196号-2
+			</p>
+		</div>
+	<!-- </div> -->
+</body>
+</html>

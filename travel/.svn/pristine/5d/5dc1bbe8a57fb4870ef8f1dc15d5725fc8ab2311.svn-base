@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-comments"></i>
+                    <div class="name">comments</div>
+                    <div class="fontclass">.icon-comments</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-cry"></i>
+                    <div class="name">cry</div>
+                    <div class="fontclass">.icon-cry</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-delete"></i>
+                    <div class="name">delete</div>
+                    <div class="fontclass">.icon-delete</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-edit"></i>
+                    <div class="name">edit</div>
+                    <div class="fontclass">.icon-edit</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-email"></i>
+                    <div class="name">email</div>
+                    <div class="fontclass">.icon-email</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-favorite"></i>
+                    <div class="name">favorite</div>
+                    <div class="fontclass">.icon-favorite</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-search"></i>
+                    <div class="name">search</div>
+                    <div class="fontclass">.icon-search</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-atm"></i>
+                    <div class="name">atm</div>
+                    <div class="fontclass">.icon-atm</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-remind"></i>
+                    <div class="name">remind</div>
+                    <div class="fontclass">.icon-remind</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-browse"></i>
+                    <div class="name">browse</div>
+                    <div class="fontclass">.icon-browse</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-map"></i>
+                    <div class="name">map</div>
+                    <div class="fontclass">.icon-map</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bad"></i>
+                    <div class="name">bad</div>
+                    <div class="fontclass">.icon-bad</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-good"></i>
+                    <div class="name">good</div>
+                    <div class="fontclass">.icon-good</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-security"></i>
+                    <div class="name">security</div>
+                    <div class="fontclass">.icon-security</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-accountfilling"></i>
+                    <div class="name">account-filling</div>
+                    <div class="fontclass">.icon-accountfilling</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wxbzhanghu"></i>
+                    <div class="name">wxb账户</div>
+                    <div class="fontclass">.icon-wxbzhanghu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wxbsousuotuiguang"></i>
+                    <div class="name">wxb搜索推广</div>
+                    <div class="fontclass">.icon-wxbsousuotuiguang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-iconfontxingxing"></i>
+                    <div class="name">iconfont-xingxing</div>
+                    <div class="fontclass">.icon-iconfontxingxing</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-iconfontriyongbaihuo"></i>
+                    <div class="name">iconfont-riyongbaihuo</div>
+                    <div class="fontclass">.icon-iconfontriyongbaihuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-iconfontxiebaopeishi"></i>
+                    <div class="name">iconfont-xiebaopeishi</div>
+                    <div class="fontclass">.icon-iconfontxiebaopeishi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-iconfontfuwushichang"></i>
+                    <div class="name">iconfont-fuwushichang</div>
+                    <div class="fontclass">.icon-iconfontfuwushichang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jingpaicaigoushang"></i>
+                    <div class="name">金牌采购商</div>
+                    <div class="fontclass">.icon-jingpaicaigoushang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yingckjian"></i>
+                    <div class="name">隐藏可见</div>
+                    <div class="fontclass">.icon-yingckjian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-7tiantuihuo"></i>
+                    <div class="name">7天退货</div>
+                    <div class="fontclass">.icon-7tiantuihuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-15tianbaohuan"></i>
+                    <div class="name">15天包换</div>
+                    <div class="fontclass">.icon-15tianbaohuan</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-24xiaoshifahuo"></i>
+                    <div class="name">24小时发货</div>
+                    <div class="fontclass">.icon-24xiaoshifahuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-48xiaoshifahuo"></i>
+                    <div class="name">48小时发货</div>
+                    <div class="fontclass">.icon-48xiaoshifahuo</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fahuobz"></i>
+                    <div class="name">发货保障</div>
+                    <div class="fontclass">.icon-fahuobz</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-jiaoyin1"></i>
+                    <div class="name">脚印1</div>
+                    <div class="fontclass">.icon-jiaoyin1</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-aniukefu2"></i>
+                    <div class="name">阿牛客服2</div>
+                    <div class="fontclass">.icon-aniukefu2</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-caigou-xianxing"></i>
+                    <div class="name">05采购-线性</div>
+                    <div class="fontclass">.icon-caigou-xianxing</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xihuan-xianxing"></i>
+                    <div class="name">213喜欢-线性</div>
+                    <div class="fontclass">.icon-xihuan-xianxing</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-paizhao"></i>
+                    <div class="name">237拍照</div>
+                    <div class="fontclass">.icon-paizhao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-tupian-xianxing"></i>
+                    <div class="name">238图片-线性</div>
+                    <div class="fontclass">.icon-tupian-xianxing</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-saomiao"></i>
+                    <div class="name">239扫描</div>
+                    <div class="fontclass">.icon-saomiao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xianshikejian"></i>
+                    <div class="name">240显示、可见</div>
+                    <div class="fontclass">.icon-xianshikejian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zhuxiaoguanji"></i>
+                    <div class="name">246注销、关机</div>
+                    <div class="fontclass">.icon-zhuxiaoguanji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-haoping-yuankuang"></i>
+                    <div class="name">247好评-圆框</div>
+                    <div class="fontclass">.icon-haoping-yuankuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-chaping-yuankuang"></i>
+                    <div class="name">248差评-圆框</div>
+                    <div class="fontclass">.icon-chaping-yuankuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-haoping"></i>
+                    <div class="name">247好评</div>
+                    <div class="fontclass">.icon-haoping</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yiban"></i>
+                    <div class="name">250一般</div>
+                    <div class="fontclass">.icon-yiban</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-manyi"></i>
+                    <div class="name">249满意</div>
+                    <div class="fontclass">.icon-manyi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-bumanyi"></i>
+                    <div class="name">251不满意</div>
+                    <div class="fontclass">.icon-bumanyi</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-Phoneshouji"></i>
+                    <div class="name">255Phone手机</div>
+                    <div class="fontclass">.icon-Phoneshouji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-PCtaishiji"></i>
+                    <div class="name">254PC台式机</div>
+                    <div class="fontclass">.icon-PCtaishiji</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-zhengquewancheng-xianxingyuankuang"></i>
+                    <div class="name">303正确、完成-线性圆框</div>
+                    <div class="fontclass">.icon-zhengquewancheng-xianxingyuankuang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-folder"></i>
+                    <div class="name">folder</div>
+                    <div class="fontclass">.icon-folder</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-yinhangqia"></i>
+                    <div class="name">48银行卡</div>
+                    <div class="fontclass">.icon-yinhangqia</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-hongbao"></i>
+                    <div class="name">52红包</div>
+                    <div class="fontclass">.icon-hongbao</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-camera"></i>
+                    <div class="name">camera</div>
+                    <div class="fontclass">.icon-camera</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiugaigerentouxiang-"></i>
+                    <div class="name">修改个人头像</div>
+                    <div class="fontclass">.icon-xiugaigerentouxiang-</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

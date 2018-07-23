@@ -1,0 +1,31 @@
+var mysql      = require('mysql2');
+const connection = mysql.createConnection({
+  host: '10.3.138.233',
+  port: 3307,
+  user: 'root',
+  password: '123456',
+  database: 'kanghui'
+});
+
+ 
+module.exports = {
+	execute : function(sql){
+		// console.log(sql);
+		
+		// connection.query(sql, function (error, results, fields) {
+		//   if (error) throw error;
+		//   res = results;
+		//   console.log(results);
+		// });
+		 return new Promise(function(resolve,reject){
+			 	connection.query(sql, function (error, results, fields) {
+					  if (error) throw error;
+					  console.log(results);
+					 resolve(results);
+			});
+		 });
+			 
+
+		
+	}
+}

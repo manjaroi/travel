@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/order.css">
+	<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="./js/order"></script>
+	<script src="./lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div id="l_message">
+		<div class="container">	
+			<p class="l_write">填写订单核对信息</p>
+			<div class="l_message_l show">
+				<!-- <p>北京出发冰城哈尔滨、俄罗斯风情小镇、万达度假区半自助双卧4日游</p><p>产品编号 169231 &nbsp;&nbsp;[北京出发][跟团游]</p><p>套餐类型 默认</p><p>出游日期<span>2018年07月26日 周四</span></p><p>出游人数 成人 1</p> -->
+			</div>
+			<div class="l_message_r">
+				<!-- <p>结算单</p><p><span>订单信息</span><span>￥<i>2028</i></span></p><p><span>成人</span><span><i>1</i>x ￥<i>1688</i></span></p><p><span>单房差</span><span><i>1</i>x ￥<i>340</i></span></p><p><span>费用合计</span><span><i>￥</i> <i>2028</i></span></p> -->
+			</div>
+			<div class="l_message_l second">
+				<p>联系人<span>请务必确保以下联系方式准确及通畅，便于接收行程通知与确认信息</span></p>
+				<p><label for="username"><i>*</i>联系人</label><input type="text" autocomplete="off" id="username" placeholder="请输入中文姓名"></p>
+				<p><label for="password"><i>*</i>手机号</label><input type="text" autocomplete="off" id="password" placeholder="请输入常用手机号码"></p>
+				<p><label for="email">&nbsp;&nbsp;&nbsp;<i>*</i>邮箱</label><input type="text" autocomplete="off" id="email" placeholder="请输入邮箱"></p>
+			</div>
+			<div class="l_message_l third">
+				<p>出行人信息<span>为了确保您顺利出行，请务必仔细填写出行人信息，避免因信息错误耽误您的行程</span></p>
+				<p><span>1</span><i>第1位出行人</i></p>
+				<p><label for="name">中文姓名</label><input type="text" id="name" placeholder="请输入中文姓名"></p>
+				<p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别</span><select name="" id=""><option value="">男</option><option value="">女</option></select></p>
+				<p><label for="num">证件号码</label><select name="" id=""><option value="">护照</option><option value="">身份证</option></select><input type="text" id="num" placeholder="请输入证件号码"></p>
+			</div>
+			<div class="l_message_l forth">
+				<p>发票信息</p>
+				<p><input type="radio" name="need"><span>不需要</span><input type="radio" name="need"><span>需要</span></p>
+			</div>
+			<div class="l_message_l fifth">
+				<p>优惠券<span><input type="text" placeholder="请输入优惠券编码"><a href="javascript:;">兑换优惠券</a></span></p>
+			</div>
+			<div class="l_message_l sixth">
+				<p>备注</p>
+				<p><textarea name="" id="" cols="30" rows="10" placeholder="请输入备注"></textarea></p>
+			</div>
+			<div class="l_message_l seventh">
+				<p class="clearfix"><span><a href="javascript:;"><返回上一步</a></span><span><i>总价:</i><i>￥</i><i class="total3">2028</i></span></p>
+				<a href="javascript:;" class="l_send">提交订单</a>
+			</div>
+			<div class="l_message_l eighth">
+				<p>费用包含</p>
+				<p>
+					1.交通：含广州-新加坡-广州来回程国际机票及机建燃油税。（免费托运行李为20KG/人） 2.用车：当地空调旅游车（根据团队人数旅游车，保证每人1正座）。 3.住宿：全程当地3星+4星酒店标准双人间（两人一间房），升级1晚五星酒店住宿。单男单女及单人住宿要求需补房差1200元/人。团队如出单男单女，我司领队有权调整夫妻，安排组合酒店房间住宿，客人不得有异议。（酒店无三人间也不能加床）。 4.门票：行程内景点大门票，不含园中园。 5.用餐：早餐酒店含,正餐为行程所列；不含酒水，飞机餐不视为正餐，如航空公司航班时间临时调整，我社有权根据实际航班时间安排用餐，不做任何赔偿。所有餐食如自动放弃，款项恕不退还。 6.购物: 全程5个购物店+1个土特产店(自愿消费)。 7.导游：当地中文导游及全程领队陪同服务。 8.签证：新加坡团队签证。 9.保险：赠送中国境外旅游意外险保额30万元/人（根据中国保险监督管理委员会的规定，未成年人（不满18周岁）的累计赔偿保险金不得超过10万元，；70-80岁老年人保额减半；2岁以下及80岁以上保险公司不承保）。（若需购物航空意外险或航班延误险，请在机场自理） 10.出团知道：出团前3天发出团通知书，领队在出发前2-3天电话+短信通知。
+				</p>
+				<p>
+					1.不含导游（司机）服务费300元/人，不含马来西亚正常旅游签290元/人（共计590元/人，请报名时交清) 2.护照办理费用（200元，客人自行办理）；（有效期6个月以上护照，光面白底大一寸两张3.5X4.5CM）； 3.行程外私人所产生的个人费用,行程外的自费项目 4.航空公司临时上涨的燃油税； 5.因个人意愿要求房型升级产生的单房差费用； 6.行李物品保管费以及托运行李超重产生的费用； 7.因不可抗力（如天灾战争·罢工等原因）或航空公司航班延误或取消产生的额外用（行程中航班、景点、酒店、餐厅等可能会因为天气、交通管制、临时休业、罢工等突发时间或不可抗力原因而需要做出顺序调整、取消或更换；因上述不可抗力等原因而导致航班延误、行程更改、滞留或行程提前结束时， 旅行社会根据实际情况作出积极、适当处理。若因此而产生费用，超出已交旅行团费部份的由游客自行承担。）； 8.持港澳台护照或持外籍护照的客人签证自理！ 9.客人必须全程随团队旅游，确需离团自行活动者，应到当团领队处办理手续，并交纳离团费1000元/人/天。
+				</p>
+			</div>			
+		</div>
+	</div>
+	<div id="foot">
+		<div class="container">
+			<p>
+				Copyright © 1985-2018 CCT.CN 中国康辉旅游 旅行社业务经营许可证号 L-BJ-CJ00011 , 京公安网备11010502026849 京ICP备17021196号-2
+			</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+#manage-orders {
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	/*border: 2px solid black;*/
+}
+#manage-orders .order-search {
+	margin-bottom: 5px;
+}
+#manage-orders .order-search>input{
+	display: block;
+	width: 200px;
+	height: 30px;
+	font-size: 14px;
+	padding-left: 15px;
+	border: 1px solid #ccc;
+}
+.table-box .payed {
+	color: green;
+	font-weight: bolder;
+}
+.table-box .unpayed {
+	color: red;
+	font-weight: bolder;
+}
+#manage-orders .page-row {
+	width: 100%;
+	height: 40px;
+	/*background-color: #E7DB74;*/
+}

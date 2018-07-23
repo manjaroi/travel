@@ -1,0 +1,61 @@
+<script type="text/javascript" src="./js/manage-config.js"></script>
+<script type="text/javascript" src="js/manage-products.js"></script>
+<div id="manage-products">
+	<!-- 添加按钮 -->
+	<div class="produce_top">
+		<button type="button" class="btn btn-info addData">新增数据</button>
+	</div>
+	<!-- 表格 -->
+	<div class="table-box">
+		<table class="table table-bordered table-hover data-table">
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>线路</th>
+						<th>价格</th>
+						<th>图片地址</th>
+						<th>出发地点</th>
+						<th>时间</th>
+						<th colspan="2">操作</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+		</table>	
+	</div>
+
+	<div class="botton-row">
+		<div class="page-box"></div>
+	</div>
+</div>
+<!-- 表单 -->
+<div class="mask">
+	<form class="addForm">
+	  <div class="form-group">
+	    <label for="travel-route">添加线路</label>
+	    <input type="text" class="form-control" id="travel-route" placeholder="线路名">
+	  </div>
+	  <div class="form-group">
+	    <label for="traval-price">出团价格</label>
+	    <input type="text" class="form-control" id="traval-price" placeholder="出团价格">
+	  </div>
+	  <div class="form-group iconfont2">
+	    <label for="traval-place">出发地点</label>
+	    <input type="text" class="form-control" id="traval-place" placeholder="出发地点">
+	  </div>
+	  <div class="form-group">
+	    <label for="traval-departure">出发时间</label>
+	    <input type="date" class="form-control" id="traval-departure" placeholder="出发时间">
+	  </div>
+	  <div class="form-group">
+	    <label for="traval-showPic">展示图片</label>
+	    <input type="file" name="photos" id="traval-showPic" >
+	    <p class="help-block">请上传正确格式的图片(jpg,png)</p>
+	  </div>
+	  
+	  <button  class="btn btn-primary submitForm">保存</button>
+	  <button  class="btn btn-primary modifyForm">确认修改</button>
+	  <button  class="btn btn-danger cancel">取消</button>
+	</form>
+</div>
+
+

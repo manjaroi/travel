@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/base.css" />
+	<link rel="stylesheet" type="text/css" href="./lib/mt_font/iconfont.css" />
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./lib/jquery-3.3.1.js"></script>
+	<script src="./js/head.js"></script>
+</head>
+<body>
+	<div class="top_price">
+		<a href="javascript:;"><div class="delete">×</div></a>
+	</div>
+	<div id="box">	
+		     <div class="top">
+       <dl class="zhank zk1">
+        <dd><a href="">当地游</a></dd>
+        <dd><a href="">wifi/电话卡</a></dd>
+        <dd><a href="">当地用车</a></dd>
+        <dd class="zhank_rh"><a href="">票卷</a></dd>
+      </dl>
+      <dl class="zhank zk2">
+        <dd><a href="">国内自由行</a></dd>
+        <dd class="zhank_rh"><a href="">境内自由行</a></dd>
+      </dl>
+         
+        <div class="container">
+        <div class="top_bm">
+            <h1>康辉旅游唯一官方网站CCT.CN</h1>
+           
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">收藏本站</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li class="pp"><div class="app"></div><a href="#"><i></i>手机APP</a></li>
+                <li class="one"><div class="weixin"></div><a href="#"></a></li>
+                
+                <li class="two"><a href="#"></a></li>
+            </ul>
+             <p><span>请</span><a href="login.html">登录</a><span>或</span><a href="register.html">免费注册</a></p>
+        </div>
+        <div class="top_dh">
+            <div class="left fl">
+                <div class="tp">
+                    <img class="fl" src="imgs/mt_image/2.png" alt="" />
+                    <i></i>
+                   <select>
+
+            <option value="1">广州</option> 
+            <option value="1">深圳</option> 
+            <option value="1">上海</option>
+            <option value="1">北京</option> 
+            <option value="1">合肥</option> 
+            <option value="1">杭州</option>  
+         </select> 
+           <div class="sarch">
+
+               <input type="button" value="搜索" />
+               <input type="text"  placeholder="搜索国家、城市、产品" />
+               <div class="resou resou1">泰国</div>
+               <div class="resou resou2">俄罗斯</div>
+               
+           </div>
+                
+            </div>
+            <div class="bom">
+                    <ul>
+                        <li><a href="">首页</a></li>
+                        <li><a href="">出境游</a></li>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li class="ddiy"><a href=""> 当地玩乐</a><i></i></li>
+                        <li><a href="">全球签证</a></li>
+                        <li class="ziyouh"><a href="">
+                        
+                        自由行</a><i></i></li>
+                        <li><a href="">游轮</a></li>
+                        <li><a href="">留学</a></li>
+                        <li><a href="">置业</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right fr"><a href="#"><img src="./imgs/mt_image/1.png" alt="" /></a></div>
+        
+            
+         </div>
+         </div>
+       </div>
+	</div>
+</body>
+</html>

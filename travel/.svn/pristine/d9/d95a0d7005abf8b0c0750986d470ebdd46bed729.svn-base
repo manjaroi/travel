@@ -1,0 +1,235 @@
+require.config({
+  paths : {
+    'jquery' : '../lib/jquery-3.3.1',
+    'http' : './httpclient1',
+  }
+})
+
+
+require(['jquery','http'],function($,http){
+
+      $(function(){
+      // ******************头部图片关闭***************************
+        $('.delete').click(function(){
+          $('#box').css("transform","translateY(-80px)");
+            $('#l_main').css("transform","translateY(-80px)");
+             $('#l_foot').css("transform","translateY(-80px)");
+      })
+      
+    // *********************top_bom展开**************************
+            $('.top .ddiy').mouseover(function(){
+               $('.zk1').css("display","block");
+           })
+            $('.top .ddiy').mouseout(function(){
+                if(zk_one){
+                $('.top .ddiy').mouseout(function(){
+               $('.zk1').css("display","none"); })
+           }else{
+                
+               $('.zk1').css("display","none");
+             
+                }
+           })
+            $('.top .ziyouh').mouseover(function(){
+               $('.zk2').css("display","block");
+               
+           })
+            $('.top .ziyouh').mouseout(function(){
+              
+             if(zk_two){
+                $('.top .ziyouh').mouseout(function(){
+               $('.zk2').css("display","none"); })
+           }else{
+                
+               $('.zk2').css("display","none");
+             
+                }
+            })
+             $('.top .zk2').mouseout(function(){
+               $('.zk2').css("display","none"); })
+             $('.top .zk1').mouseout(function(){
+               $('.zk1').css("display","none"); })
+           var  zk_one = $('.top .zk1').mouseover(function(){
+               $('.zk1').css("display","block");
+               return true;
+           })
+
+          var  zk_two = $('.top .zk2').mouseover(function(){
+               $('.zk2').css("display","block");
+               return true;
+           })
+
+          let show = true;
+$('.j_port').click(function(){
+  http.get('src/api/region.json').then(function(res){
+    let arr;
+    for(var key in res){
+      arr = res.regions;
+    }
+    let str = '';
+    str += arr.map(function(item,i){
+      if (item.hot == true) {
+        return `<a href="javascript:;">${item.name}</a>`;
+      }
+    }).join('')
+    $('.hotCities').html(str);
+
+    let word = 'ABCDEFGHJKLMNPQRSTWXYZ';
+    word = word.split('');
+    let word_html = '';
+    word_html += word.map(function(item, index) {
+      return `<a class="index j_index" href="#a${index}">${item}</a>`;
+    }).join("");
+
+    $('.cityIndexes').html(word_html);
+    let A = $('.cityIndexes').eq(0).find('span').eq(0);
+    A.addClass('on');
+    let city = $('.cityIndexes').eq(0).find('span');
+    $('.cityIndexes').mouseover(function(e){
+      let target = e.target;
+      $(target).addClass("on");
+      $(target).siblings().removeClass("on");
+    })
+  })
+  if (show) {
+    $('.layer').css('display','block');
+  }else if (!show) {
+    $('.layer').css('display','none');
+  }
+  show = !show;
+
+})
+
+http.get('src/api/region.json').then(function(res){
+  let city_html = '';
+  let abc = '';
+  let arr1;
+  let word1 = 'ABCDEFGHJKLMNPQRSTWXYZ';
+  word1 = word1.split('');
+  for(var key in res){
+    arr1 = res.regions;
+  }
+
+  let arr2 = [];
+  let dd = '';
+  for(var i = 0;i < word1.length;i ++){
+    let dl = `<dl class="section j_section" id="a${i}"></dl>`;
+    dd = `<dd class="value"></dd>`
+    for(let key in res){
+      let arr = res['regions'];
+      city_html = arr.map(function(item,idx) {
+        var res = item.pinyin.slice(0, 1);
+        var area = item.regions;
+        if(item.municipality && res == word1[i]) {
+          return `<a href="javascript:;" data-letter="${item.pinyin}">${item.name}</a>`;
+        } else if(area) {
+          return area.map(function(item,idx) {
+            if(item.pinyin) {
+              var begin2 = item.pinyin.slice(0, 1);
+              if(begin2 == word1[i]) {
+                return `<a href="javascript:;" data-letter="${item.pinyin}">${item.name}</a>`;
+              }
+            }
+          }).join("");
+        }
+      }).join("");
+      arr2.push(city_html);
+    }
+
+
+    $('.scrollBody').append(dl);
+  }
+
+  
+
+
+
+
+  $('.j_section').each(function(idx,item){
+    $('<dt class="index">'+ word1[idx] +'</dt>').appendTo($(item));
+        // $(arr2[idx]).appendTo($(item));  
+      })
+
+
+  $('.j_section').append(dd);
+
+  $('.value').each(function(idx,item){
+    $(arr2[idx]).appendTo($(item));
+  })
+  $('.searchInput').focus(function(){
+    $('.searchPlaceholder').css('display','none');
+  })
+  $('.searchInput').blur(function(){
+    if ($('.searchInput').val() == '') {
+      $('.searchPlaceholder').css('display','block');
+    }
+  })
+
+  let search = '';
+  let arr3 = [];
+  $('.searchInput').bind('input propertychange',function(){
+    let input_value = $('.searchInput').val();
+    for(let i = 0;i < word1.length;i ++){
+      for(let key in res){
+        let arr = res['regions'];
+        search = arr.map(function(item,idx){
+          var res = item.pinyin.slice(0, i);
+                // console.log(res);
+                var area = item.regions;
+                if(input_value == res.toLowerCase() && input_value != '') {
+                  if (item.name != $('.searchResult').text()) {
+                    return `<a href="javascript:;">${item.name}</a>`;
+                  }
+                }else if (area) {
+                  return area.map(function(item,idx){
+                    if (typeof item.pinyin == 'string') {
+                      let str = item.pinyin.slice(0, i);
+                      if (input_value == str.toLowerCase() && input_value != '') {
+                        if (item.name != $('.searchResult').text()) {
+                          return `<a href="javascript:;">${item.name}</a>`;
+                        }
+                      }
+                    }
+                  }).join('');
+                }
+              }).join('');
+      }
+      arr3.push(search);
+      let arr4 = arr3[arr3.length-1]
+      // console.log(arr4);
+      $('.searchResult').append(arr3[arr3.length-1]);
+      $('.searchInput').keydown(function(){
+        $('.searchResult').html('');
+      })  
+
+    }
+  })
+})             
+
+
+
+
+     // ******************尾部图片关闭******************
+        var lpl = `translateX(${-window.innerWidth}px)` ;
+         $('.shany').css("transform","translateX(110px)");
+          $('.xidi')[0].style.transform = lpl;
+        $('.guanbi').click(function(){
+        $('.xidi')[0].style.transform = lpl;
+        setTimeout(function(){
+            $('.shany').css("transform","translateX(110px)")
+        }, 1500)
+        
+
+       })
+        $('.shany').click(function(){
+        $('.xidi').css("transform","translateX(0px)");
+        $('.shany').css("transform","translateX(-110px)")
+       
+        
+
+       })
+    })
+
+
+})
+

@@ -1,0 +1,66 @@
+<div class="produce_top">
+	<button type="button" class="btn btn-info">添加数据</button>
+</div>
+<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th>id</th>
+				<th>线路</th>
+				<th>价格</th>
+				<th>图片地址</th>
+				<th>出发地点</th>
+				<th>时间</th>
+				<th colspan="2">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- <tr>
+				<td>001</td>
+				<td>惠缤纷|福州/厦门往返曼谷+芭提雅六日经典游</td>
+				<td>3998.00</td>
+				<td>http://localhost:8080/imgs/indexPics/62bd3316833e.jpg_448x299q80.jpg</td>
+				<td>广州</td>
+				<td>2018-07-16</td>
+				<td><button class="btn btn-warning">删除</button></td>
+				<td><button class="btn btn-info">修改</button></td>
+			</tr> -->
+		</tbody>
+</table>
+<div class="botton-row">
+	<div class="page-box"></div>
+</div>
+
+<script type="text/javascript">
+	$(function(){
+		$.ajax({
+			url:"http://localhost:8080/getDatas",
+			type:"post",
+			data : {
+				page : 1,
+				qty : 10
+			},
+			success : function(res){
+				console.log(res);
+				let tbody = $("tbody");
+				res.forEach(function(item,idx){
+					tbody.append(`<tr>
+				<td>${item.id}</td>
+				<td>${item.name}</td>
+				<td>${item.price}</td>
+				<td>${item.imgurl}</td>
+				<td>${item.start_place}</td>
+				<td>2018-07-16</td>
+				<td><button class="btn btn-warning">删除</button></td>
+				<td><button class="btn btn-info">修改</button></td>
+				</tr>`)
+				});
+			}
+		});
+		$.ajax({
+			url:"http://localhost:8080/counts",
+			success:function(count){
+				console.log(count);
+			}
+		});
+	})
+</script>

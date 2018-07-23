@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css" />
+    <link rel="stylesheet" type="text/css" href="./css/details.css" />
+ 
+    <script type="text/javascript" src="./lib/jquery.js"></script>
+    <script type="text/javascript" src="./js/details.js"></script>
+    <script src="./js/jquery.nav.js"></script>
+</head>
+<body>
+    <div class="oyw_mounting">
+        <div class="container clearfix">
+             <ul class="mounting-l clearfix oyw_ul fl">
+                <li><a href="#p3">线路特色</a></li>
+                <li><a href="#tour">行程介绍</a></li>
+                <li><a href="#cost">费用说明</a></li>
+                <li><a href="#book">预订须知</a></li>
+                <li><a href="#policy">退改政策</a></li>
+                <li><a href="#retail">康辉门市</a></li>
+            </ul>
+            <div class="mounting-r fr">
+                <span class="price price1"></span>
+                <a class="btn2 yd" href="javascript:;">立即预定</a>
+            </div>
+        </div>
+    </div>
+  
+    <div class="container">
+        <div class="oyw_main-t">
+            <p class="p1">
+                <a href="login.html">首页</a>
+                        &gt;
+                <a href="login.html">出境旅游</a>
+                &gt; 曼谷跟团游
+            </p>
+            <div class="main-c clearfix">
+               <!--  <div class="main-cl fl"></div>
+                <div class="main-cr fr">
+                    <h3>北京出发曼谷+沙美岛+芭提雅5晚7天跟团游（泰爱·沙美）,国泰航空</h3>
+                    <h4>曼谷升级一晚国际五星,沙美岛体验泰式度假村,沙美岛海鲜餐,泰式风味火锅餐,国际自助餐,国际人妖表演,泰式古法按摩。</h4>
+                    <h5><em>参考价：</em><span  class="price">3699</span><em>起/人</em></h5>
+                    <dl>
+                        <dt>出 发 地</dt>
+                        <dd>北京</dd>
+                       
+                    </dl>
+                    <dl>
+                        <dt>目 的 地</dt>
+                        <dd>曼谷</dd>
+                        <dd>芭提雅</dd>
+                        <dd>沙美岛</dd>
+                    </dl>
+                    <dl>
+                        <dt>相关服务</dt>
+                        <dd>本产品由康辉集团北京国际旅行社有限公司提供相关服务</dd>
+                        
+                    </dl>
+                    <p class="p2">
+                        <i></i>
+                        <span>康辉定制游</span>
+                        <em>行程自己做主，时间无拘无束</em>
+                        <a href="#">立即定制</a>
+                    </p>
+                </div>  -->
+            </div>
+            <div class="main-t clearfix">
+                <div class="main-tl fl"></div>
+                <div class="main-tr fr">
+                    <div class="form_set plans j_plans clearfix">
+                        <div class="form_label">选择套餐</div>
+                        <div class="form_input">
+                            <ul class="plan_list j_planList clearfix"> 
+                                <li class="plan_item j_planItem checked">默认套餐 <i></i></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="form_set clearfix">
+                        <div class="form_label">出游日期</div>
+                        <div class="form_input">
+                            <div class="date_select ">请选择出游日期</div>
+                        </div>
+                    </div>
+                    <div class="form_set counters clearfix">
+                        <div class="form_label"> 出游人数 </div>
+                        <div class="form_input"> 
+                            <div class="counter_item counter_item-adult clearfix">
+                                <div class="counter">
+                                    <a class="ctrl j_sub disabled" href="javascript:;">-</a>
+                                    <input class="num" id="standard_count" value="1">
+                                    <a class="ctrl j_add" href="javascript:;">+</a>
+                                   
+                                </div>
+                                <div class="label"> 成人</div>
+                            </div>
+                            <div class="counter_item counter_item-child clearfix">
+                                <div class="counter j_counter">
+                                    <a class="ctrl disabled  j_sub" href="javascript:;">-</a>
+                                    <input class="num" id="child_count" value="0">
+                                    <a class="ctrl j_add" href="javascript:;">+</a>
+                                  
+                                </div>
+                                <div class="label"> 儿童</div>
+                                <span class="remark">  （0-12岁）</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order_prices clearfix">
+                        <span class="name">总　　计</span>
+                        <span class="total">
+                            <span class="cur">￥</span>
+                            <span class="num">0</span>
+                        </span>
+                       
+                    </div>
+                    <div class="form_set">
+                        <div class="form_input">
+                            <div class="placeOrder" id="placeOrder"><a href="javascript:;" class="btn1" style="color: #fff;">立即预订</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="oyw_main-c clearfix">
+            <div class="main-cl fl">
+                <ul class="main-cl-t clearfix oyw_ul">
+                    <li><a href="#p3">线路特色</a></li>
+                    <li><a href="#tour">行程介绍</a></li>
+                    <li><a href="#cost">费用说明</a></li>
+                    <li><a href="#book">预订须知</a></li>
+                    <li><a href="#policy">退改政策</a></li>
+                    <li><a href="#retail">康辉门市</a></li>
+                </ul>
+                <p class="p3" id="p3">
+                    <i></i>
+                    曼谷升级一晚国际五星级酒店；入住沙美岛泰式度假村顿顿特色餐-沙美岛星光夜宴海鲜餐、绿光森林餐厅、东芭乐园自助餐
+                    泰国人妖表演、清迈小镇+骑大象、泰式按摩、东芭乐园表演
+                    <i></i>
+                </p>
+                <div class="tour h0" id="tour">
+                    <div class="tour-t">
+                        <em>行程介绍</em>
+                        <span>本行程为多行程计划，不同团期对应的行程计划有所不同</span>
+                    </div>
+                    <div class="brie">
+                        <h4>行程简介</h4>
+                        <table>
+                            <tr>
+                                <td>天数</td>
+                                <td>行程/景点</td>
+                                <td>参考酒店</td>
+                                <td>早餐</td>
+                                <td>午餐</td>
+                                <td>晚餐</td>
+                            </tr>
+                            <tr>
+                                <td>第1天</td>
+                                <td>北京—香港—曼谷 参考航班：KA997 0305/0630 CX713 0910/1120（航班以出团通知为准）</td>
+                                <td>曼谷团队五星酒店</td>
+                                <td>无</td>
+                                <td>机场简餐</td>
+                                <td>团队用餐</td>
+                            </tr>
+                            <tr>
+                                <td>第2天</td>
+                                <td>曼谷—沙美岛</td>
+                                <td>沙美岛泰式度假村</td>
+                                <td>酒店内</td>
+                                <td>泰式火锅餐</td>
+                                <td>沙美岛海鲜餐</td>
+                            </tr>
+                            <tr>
+                                <td>第3天</td>
+                                <td>沙美岛—芭堤雅</td>
+                                <td>芭堤雅团队五星级酒店</td>
+                                <td>酒店内</td>
+                                <td>绿光森林餐厅或同级</td>
+                                <td>PIPO米其林自助餐</td>
+                            </tr>
+                            <tr>
+                                <td>第4天</td>
+                                <td>芭堤雅</td>
+                                <td>芭堤雅团队五星级酒店</td>
+                                <td>酒店内</td>
+                                <td>东芭乐园自助餐或同级</td>
+                                <td>酒店内餐厅或同级</td>
+                            </tr>
+                            <tr>
+                                <td>第5天</td>
+                                <td>芭堤雅—曼谷</td>
+                                <td>曼谷国际五星级酒店</td>
+                                <td>酒店内</td>
+                                <td>中途用餐</td>
+                                <td>团队用餐</td>
+                            </tr>
+                            <tr>
+                                <td>第6天</td>
+                                <td>曼谷—香港—北京 参考航班：CX708 1740/2120 KA996 2250/0205+1（航班以出团通知为准）</td>
+                                <td>无</td>
+                                <td>酒店内</td>
+                                <td>KING POWER国际自助餐</td>
+                                <td>无</td>
+                            </tr>                          
+                            <tr>
+                                <td>第7天</td>
+                                <td>北京</td>
+                                <td>无</td>
+                                <td>无</td>
+                                <td>无</td>
+                                <td>无</td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="refer">
+                        <h4>参考行程</h4>
+                        <div class="timeline_mod"> 
+                            <ul class="timeline_list">  
+                                <li class="clearfix on">
+                                    <a href="#day1">第1天</a> 
+                                    <span class="timeline_icon"> 
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li> 
+                                <li class="clearfix">
+                                    <a href="#day2">第2天</a>
+                                    <span class="timeline_icon"> 
+                                        <span class="line"></span> 
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li> 
+                                <li class="clearfix">
+                                    <a href="#day3">第3天</a>
+                                    <span class="timeline_icon"> 
+                                        <span class="line"></span> 
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li> 
+                                <li class="clearfix">
+                                    <a href="#day4">第4天</a>
+                                    <span class="timeline_icon"> 
+                                        <span class="line"></span> 
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li> 
+                                <li class="clearfix">
+                                    <a href="#day5">第5天</a>
+                                    <span class="timeline_icon">
+                                        <span class="line"></span>
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#day6">第6天</a>
+                                    <span class="timeline_icon">
+                                        <span class="line"></span>
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li>
+                                <li class="clearfix">
+                                    <a href="#day7">第7天</a>
+                                    <span class="timeline_icon">
+                                        <span class="line"></span> 
+                                        <span class="point">
+                                            <i class="point_icon"></i>
+                                        </span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="day_list">
+                            <div class="day day1" id="day1">
+                                <div class="day_title">
+                                    <span class="num">D1</span>
+                                    <span>第1天</span>
+                                    北京—香港—曼谷 参考航班：KA997 0305/0630 CX713 0910/1120（航班以出团通知为准）
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            领队召开说明会，办理登机手续。搭乘国际航班飞往泰国首都—“天使之城”曼谷。前往码头乘【泰式长尾船畅游湄南河】，河道两岸是泰国最古老的居民，他们住着水上屋。后乘船前往曼谷古老的寺庙水门寺，这里的河域不知何时起聚集大量不知名的鱼群在此处聚集不散，久而久之被人们称为神鱼，吸引大量游客来乘船来此处放生喂鱼。乘专车前往建于十八世纪末期的【大皇宫】（团友们须服装整齐），此建筑物结合泰、中、西艺术风格，呈现金碧辉煌，庄严典雅，雕刻工艺精湛，经历了两百多年的辉煌历史，如今已成为泰国旅游杰出地标。尤其【玉佛寺】于大雄宝殿中所供奉玉佛，是选用稀世珍宝翡翠玉雕刻而成，属泰国镇国之宝，皇室各种大庆典均在此举办。壮丽美观的宫殿和雄伟万千的佛寺建筑，充分体现出佛教精髓已深植于泰国文化中，并洋溢着民族与宗教的和谐色彩，令人叹为观止。 
+                                            备注：如大皇宫临时遇皇家活动无法进入，改为曼谷76府古城景区游览。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：无</li>
+                                            <li>午餐：机场简餐</li>
+                                            <li>晚餐：团队用餐</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：曼谷团队五星酒店</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day2" id="day2">
+                                <div class="day_title">
+                                    <span class="num">D2</span>
+                                    <span>第2天</span>曼谷—沙美岛
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            早餐后，前往国家观光局推荐的世界最大的时尚【珠宝展示中心】(具有ISO 9001国际品质认证)，这里所展示的宝石饰品，以巧天夺工的设计，其精湛的技艺手法，汇集款式新潮时尚，因卓越品质而享誉全球（约2小时）。参观汇集泰国特产：鳄鱼皮、珍珠鱼皮、象皮制品的【皮革精品坊】（约1小时）。随后驱车前往位于罗永府的【沙美岛国家海洋自然保护风景区】，后坐船45分钟左右，抵达沙美岛，特别安排游客入住【沙美岛泰式度假村】。度假村位于沙美岛的东海岸，环境优美，这里是潜水，看日出，钓鱼和悠然享乐者的天堂。这里还是【静谧海滩】，悠闲地躺在海水的边缘和尽情享受浅滩带来的静谧，迷人的浅滩覆盖着闪闪发光的白色沙滩，沙滩里有趣的岩石若隐若现。这里像是专门为寻求安全的孩子和喜欢独处的成人设计的港湾。这里更是最美的【日出海滩】，你可换上最靓丽的泳装，我们亦体贴的准备了躺椅让您做做日光浴，吹吹海风，享受悠闲的海岛风光，放松自我、忘掉一切世俗尘嚣，尽享这世外桃源给与的难得假期。晚餐安排于沙美岛白净的沙滩上享用，让您一边用餐，一边欣赏沙美岛绮丽的星空朗月夜景，在此渡过浪漫的夜晚，除此之外，沙美岛PUB、小酒馆林立，而且越晚越浪漫。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：酒店内</li>
+                                            <li>午餐：泰式火锅餐</li>
+                                            <li>晚餐：沙美岛海鲜餐</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：沙美岛泰式度假村</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day3" id="day3">
+                                <div class="day_title">
+                                    <span class="num">D3</span>
+                                    <span>第3天</span>   沙美岛—芭堤雅   
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            早餐后，乘车前往芭堤雅，途中前往水果园，品尝各种时令水果。下去前往【英国宝妮小马俱乐部+蒙古族英勇马术表演+沙漠罕见动物区】，参观全新英国宝妮小马俱乐部:迷你宝马身高70-130公分，它一般用作展览，迷你马比一般更小，更可爱，但更难驯服，当然，别看它们个子不高，力气却一点都不小，背上骑着个七八十公斤重的成人，依旧能健步如飞。在此乐园您可以观赏迷你马的表演也可以骑上马背拍下它们可爱的模样留念。沙漠罕见动物展览馆，馆中汇集了沙漠罕见爬行动物馆之精华，地球上的两栖爬行动物已经在我们古老的星球上生活3亿多年了。走进这间模拟原生态饲养环境的沙漠罕见动物展览馆，游客将会看到为长相奇形怪状的两栖爬行动物们准备的"游泳池"、沙滩、草坪、恒温箱以及活物投喂过程等。在这里，所有的动物都没有经过人工驯化，全部尊重其在野生环境中自然取食的生活方式。随后于园内观看具有悠久历史的蒙古族传统体育项目之一的马术表演，以动作优美惊险、扣人心弦而闻名中外。在您一天的舟车劳顿后，晚上享受【泰式古法按摩】（60分钟），筋骨舒活、释放压力，全身同时放松的快感！（需自理小费约每人50/泰铢，12岁以下孩子由于骨骼未成型故不安排此项目，费用不退）后入住酒店休息。
+                                        </p>
+                                    </div>
+                                </div> 
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：酒店内</li>
+                                            <li>午餐：绿光森林餐厅或同级</li>
+                                            <li>晚餐：PIPO米其林自助餐</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：芭堤雅团队五星级酒店</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day4" id="day4">
+                                <div class="day_title">
+                                    <span class="num">D4</span>
+                                        <span>第4天</span>   芭堤雅   
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            早餐后，前往当地香火鼎盛的【金佛寺】进香祈福，为自己、为亲朋好友求得平安好运。乘车前往【东芭乐园】观赏泰国民俗表演，让你领略到泰国本土独特的民族舞蹈—土风舞，婚俗典礼，泰拳等；欣赏精心栽培的千姿兰花园和百态仙人掌园；精灵的大象表演更是让您开怀大笑，真想领养一头可爱的大象回家。前往【清迈小镇】，绿野暹踪“乘骑瑞象”悠然漫步于丛林中；观看清迈特色的长颈族。前往【泰丝工艺馆】了解泰国著名的泰丝制品、床上用品等（约60分钟）。后前往【乳胶开发中心】，这里有优质的乳胶枕、乳胶床垫等（约60分钟）。下午前往【AMAZING ART 4D神奇4D艺术馆】，这是非常有意思的艺术馆，是一个发挥创意拍照的地方。艺术馆的优点就是客人可以接触抚摸每张图画，能跟每张图画任意拍照，跟图画玩，拍起来感觉好像立体的一样，每个都要发挥个人的idea想想如何跟图片一起拍，好像亲临其境，都很逼真，惊喜无限。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：酒店内</li>
+                                            <li>午餐：东芭乐园自助餐或同级</li>
+                                            <li>晚餐：酒店内餐厅或同级</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：芭堤雅团队五星级酒店</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day5" id="day5">
+                                <div class="day_title">
+                                    <span class="num">D5</span>
+                                    <span>第5天</span>   芭堤雅—曼谷   
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            早餐后，乘车返回曼谷，途中前往【休息站】+燕窝中心，这里集中了泰国种类繁多的干果土特产及乳胶产品，任由客人参观选购（约40分钟）。随后前往参观继巴西之后设立于泰国的世界仅有的生物科研机构【毒蛇研究中心】，可欣赏世界最毒金刚眼睛蛇表演，并通过专业讲师了解“蛇与人类健康”相关医学知识（约1.5小时）。下午前往【安南国会殿堂】，泰国五世皇宫廷的代表性建筑，原为七世皇时代国会所在地，现在泰皇后诗丽吉将皇室收藏的国宝，全国最精华的艺术品陈列其中，并开放给民众参观。晚上前往【人妖歌舞表演】欣赏佳丽名媛们倾情奉献给大家的精湛演绎，陶醉于红袖飘舞、婀娜多姿、千娇百媚的艺术神韵而会感叹她们的百变神奇。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：酒店内</li>
+                                            <li>午餐：中途用餐</li>
+                                            <li>晚餐：团队用餐</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：曼谷国际五星级酒店</p> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day6" id="day6">
+                                <div class="day_title">
+                                    <span class="num">D6</span>
+                                    <span>第6天</span>
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>
+                                            早餐后，前往【KING POWER免税店】，“欧莱雅”、“雅诗兰黛”、“兰蔻”、“欧米茄”、“浪琴”等国际名牌、世界精品任您选购（约1小时）。午餐后，送至机场，搭乘国际航班返回北京。
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：酒店内</li>
+                                            <li>午餐：KING POWER国际自助餐</li>
+                                            <li>晚餐：无</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：无</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="day day7" id="day7">
+                                <div class="day_title">
+                                    <span class="num">D7</span>
+                                    <span>第7天</span>
+                                </div>
+                                <div class="day_content clearfix">
+                                    
+                                    <div class="content_mod">
+                                        <p>航班顺抵北京，结束泰国之行！</p>
+                                    </div>
+                                </div>
+                                <div class="day_detail">
+                                    <div class="day_content clearfix">
+                                        
+                                        <ul class="content_mod">
+                                            <li>早餐：无</li>
+                                            <li>午餐：无</li>
+                                            <li>晚餐：无</li>
+                                        </ul>
+                                    </div>
+                                    <div class="day_content clearfix">
+                                       
+                                        <p class="content_mod">住宿：无</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cost h0" id="cost">
+                    <div class="tour-t">
+                        <em>费用说明</em>
+                        <span>费用根据最终预定的行程计划会有所改变，具体请以最终协议与出团通知书为准</span>
+                    </div>
+                    <i></i>
+                </div>
+                <div class="book h0" id="book">
+                    <div class="tour-t">
+                        <em>预订须知</em>
+                        <span>在预定前我们建议您认真阅读下方须知事项</span>
+                    </div>
+                    <i></i>
+                </div>
+                <div class="policy h0" id="policy">
+                    <div class="tour-t">
+                        <em>退改政策</em>
+                    </div>
+                    <i></i>
+                </div>
+                <div class="retail h0" id="retail">
+                    <div class="tour-t">
+                        <em>康辉门市</em>
+                    </div>
+                    <div class="retail-c clearfix">
+                        <a class="retail-cl fl"></a>
+                        <div class="retail-cr fr">
+                            <p>您可以到<a href="#">北京市康辉45家门店</a>体验<a href="#">查看地图</a></p>
+                            <div class="r_ul">
+                                <ul class="uls clearfix">
+                                    <li><a href="#">康辉旅游接待中心</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                    <li><a href="#">阜外大街门市</a></li>
+                                    <li><a href="#">北京四季青门市</a></li>
+                                    <li><a href="#">宋家庄门市</a></li>
+                                    <li><a href="#">蒲黄榆门市</a></li>
+                                    <li><a href="#">古城门市</a></li>
+                                    <li><a href="#">通州潞苑门市</a></li>
+                                    <li><a href="#">丰联门市</a></li>
+                                    <li><a href="#">顺义石园门市</a></li>
+                                </ul>
+                                <ul class="uls clearfix">
+                                    <li><a href="#">劲松门市</a></li>
+                                    <li><a href="#">亚运村门市</a></li>
+                                    <li><a href="#">甘家口门市</a></li>
+                                    <li><a href="#">大兴门市</a></li>
+                                    <li><a href="#">广安门门市</a></li>
+                                    <li><a href="#">复兴门门市</a></li>
+                                    <li><a href="#">三元桥门市</a></li>
+                                    <li><a href="#">延庆门市</a></li>
+                                    <li><a href="#">宣武门门市</a></li>
+                                    <li><a href="#">通州北苑门市</a></li>
+                                </ul>
+                                <ul class="uls clearfix">
+                                    <li><a href="#">崇文门门市</a></li>
+                                    <li><a href="#">国贸门市</a></li>
+                                    <li><a href="#">北苑门市</a></li>
+                                    <li><a href="#">长椿街门市</a></li>
+                                    <li><a href="#">通州梨园门市</a></li>
+                                    <li><a href="#">望京南湖北路门市</a></li>
+                                    <li><a href="#">东直门门市</a></li>
+                                    <li><a href="#">朝阳路门市</a></li>
+                                    <li><a href="#">青年路门市</a></li>
+                                    <li><a href="#">安贞门市</a></li>
+                                </ul>
+                                <ul class="uls clearfix">
+                                    <li><a href="#">方庄门市</a></li>
+                                    <li><a href="#">上地信息路门市</a></li>
+                                    <li><a href="#">天通苑门市</a></li>
+                                    <li><a href="#">西直门门市</a></li>
+                                    <li><a href="#">航天桥门市</a></li>
+                                    <li><a href="#">苏州桥门市</a></li>
+                                    <li><a href="#">通州门市</a></li>
+                                    <li><a href="#">丰益桥门市</a></li>
+                                    <li><a href="#">花家地门市</a></li>
+                                    <li><a href="#">远大路门市</a></li>
+                                </ul>
+                                <ul class="uls clearfix"> 
+                                    <li><a href="#">顺义门市</a></li>
+                                    <li><a href="#">地坛门市</a></li>
+                                    <li><a href="#">惠新东桥门市</a></li>
+                                    <li><a href="#">昌平门市</a></li>
+                                    <li><a href="#">西关路门市</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                    <li><a href="#">长阳第一门市</a></li>
+                                </ul>
+                                <i class="i1-btn"></i>
+                                <i class="i2-btn"></i>
+                            </div>
+                            <i class="i3"></i>
+                        </div>
+                       
+                    </div> 
+                    <div class="retail-b clearfix">
+                        <div class="retail-bl1 retail0 fl">
+                            <dl>
+                                <dt>热门玩法</dt>
+                                <dd>出境游</dd>
+                                <dd>国内游</dd>
+                                <dd>邮轮</dd>
+                                <dd>海岛度假</dd>
+                                <dd>自由行</dd>
+                                <dd>当地游</dd>
+                                <dd>高端定制</dd>
+                            </dl>      
+                        </div>
+                        <div class="retail-bl2 retail0 fl">
+                            <dl>
+                                <dt>出境热门</dt>
+                                <dd>日本</dd>
+                                <dd>泰国</dd>
+                                <dd>美国</dd>
+                                <dd>法国</dd>
+                                <dd>马尔代夫</dd>
+                                <dd>奥大利亚</dd>
+                                <dd>新西兰</dd>
+                                <dd>巴厘岛</dd>
+                                <dd>普吉岛</dd>
+                                <dd>越南</dd>
+                                <dd>东南亚</dd>
+                                <dd>意大利</dd>
+                            </dl>      
+                        </div>
+                        <div class="retail-bl3 retail0 fl">
+                            <dl>
+                                <dt>国内热门</dt>
+                                <dd>三亚</dd>
+                                <dd>云南</dd>
+                                <dd>厦门</dd>
+                                <dd>长白山</dd>
+                                <dd>黄山</dd>
+                                <dd>广西</dd>
+                                <dd>四川</dd>
+                                <dd>九寨沟</dd>
+                                <dd>北京</dd>
+                                <dd>西藏</dd>
+                                <dd>张家界</dd>
+                                <dd>西安</dd>
+                            </dl>      
+                        </div>
+                        <div class="retail-br retail0 fr">
+                            <dl>
+                                <dt>出境必备</dt>
+                                <dd>签证</dd>
+                                <dd>接送机</dd>
+                                <dd>wifi</dd>            
+                            </dl>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-cr fr">
+                <a class="main-cr-t" href="#"></a>
+                <img src="./imgs/d8.png" />
+                <div class="led main-c0">
+                    <h4>相关产品</h4>
+                    <ul>
+                        <li>
+                            <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                         <li>
+                             <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                        <li>
+                           <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rencent main-c0">
+                    <h4>最近浏览</h4>
+                    <ul>
+                         <li>
+                           <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                        <li>
+                            <a href="#"><img src="" /></a>
+                            <p><a href="#">北京出发曼谷</a>
+                            <span>3499</span></p>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="l_foot">
+        <div class="container clearfix">
+                <div class="l_foot_l clearfix">
+                    <div class="l_foot_l_l clearfix">
+                        <dl class="first">
+                            <dt>关于康辉</dt>
+                            <dd>关于我们</dd>
+                            <dd>商务合作</dd>
+                            <dd>联系我们</dd>
+                            <dd>加入我们</dd>
+                        </dl>
+                        <dl>
+                            <dt>旅游服务</dt>
+                            <dd>出境游</dd>
+                            <dd>国内游</dd>
+                            <dd>签证</dd>
+                        </dl>
+                        <dl>
+                            <dt>旅游攻略</dt>
+                            <dd>签证攻略</dd>
+                            <dd>旅游百科</dd>
+                            <dd>目的地攻略</dd>
+                            <dd>国内景点攻略</dd>
+                        </dl>
+                        <dl>
+                            <dt>用户帮助</dt>
+                            <dd>预订流程</dd>
+                            <dd>支付方式</dd>
+                            <dd>投诉建议</dd>
+                        </dl>
+                        <dl>
+                            <dt>网站条款</dt>
+                            <dd>服务协议</dd>
+                            <dd>版权指引</dd>
+                            <dd>隐私政策</dd>
+                        </dl>
+                    </div>
+                    <div class="l_foot_l_r">
+                        <p>客户服务热线</p>
+                        <p>4000-198-198</p>
+                        <p>工作时间:08:00-20:00</p>
+                        <a href="javascript:;"><span>康辉在线客服</span></a>
+                    </div>
+                    <div class="l_logo fr">
+                        <img src="./imgs/l_15.png" alt="">
+                        <p>下载康辉旅游APP</p>
+                    </div>
+                </div>
+                <div class="l_foot_b clearfix">
+                    <div>
+                        <i class="icon icon1"></i>
+                        <span>亚太旅游协会会员</span>
+                    </div>
+                    <div>
+                        <i class="icon icon2"></i>
+                        <span>国际航空运输协会会员</span>
+                    </div>
+                    <div>
+                        <i class="icon icon3"></i>
+                        <span>中国旅行社协会会长单位</span>
+                    </div>
+                    <div>
+                        <i class="icon icon4"></i>
+                        <span>企业经营电子执照</span>
+                    </div>
+                    <div>
+                        <i class="icon icon5"></i>
+                        <span>不良信息举报中心</span>
+                    </div>
+                    <div>
+                        <i class="icon icon6"></i>
+                        <span>360网站健康检测</span>
+                    </div>
+                    <div>
+                        <i class="icon icon7"></i>
+                        <span class="last">诚信网站</span>
+                    </div>
+                </div>
+                <p class="l_foot_p">
+                    Copyright © 1985-2018 CCT.CN 中国康辉旅游 旅行社业务经营许可证号 L-BJ-CJ00011 , 京公安网备11010502026849 京ICP备17021196号-2
+                </p>
+        </div>
+    </div>
+</body>
+</html>

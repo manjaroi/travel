@@ -1,0 +1,71 @@
+$(function(){
+	// ******************头部图片关闭***************************
+   	$('.delete').click(function(){
+     	$('#box').css("transform","translateY(-80px)");
+        $('#l_main').css("transform","translateY(-80px)");
+         $('#l_foot').css("transform","translateY(-80px)");
+ 	})
+  
+// *********************top_bom展开**************************
+        $('.top .ddiy').mouseover(function(){
+           $('.zk1').css("display","block");
+       })
+        $('.top .ddiy').mouseout(function(){
+            if(zk_one){
+            $('.top .ddiy').mouseout(function(){
+           $('.zk1').css("display","none"); })
+       }else{
+            
+           $('.zk1').css("display","none");
+         
+            }
+       })
+        $('.top .ziyouh').mouseover(function(){
+           $('.zk2').css("display","block");
+           
+       })
+        $('.top .ziyouh').mouseout(function(){
+          
+         if(zk_two){
+            $('.top .ziyouh').mouseout(function(){
+           $('.zk2').css("display","none"); })
+       }else{
+            
+           $('.zk2').css("display","none");
+         
+            }
+        })
+         $('.top .zk2').mouseout(function(){
+           $('.zk2').css("display","none"); })
+         $('.top .zk1').mouseout(function(){
+           $('.zk1').css("display","none"); })
+       var  zk_one = $('.top .zk1').mouseover(function(){
+           $('.zk1').css("display","block");
+           return true;
+       })
+
+      var  zk_two = $('.top .zk2').mouseover(function(){
+           $('.zk2').css("display","block");
+           return true;
+       })
+
+ // ******************尾部图片关闭******************
+    var lpl = `translateX(${-window.innerWidth}px)` ;
+     $('.shany').css("transform","translateX(110px)");
+      $('.xidi')[0].style.transform = lpl;
+    $('.guanbi').click(function(){
+    $('.xidi')[0].style.transform = lpl;
+    setTimeout(function(){
+        $('.shany').css("transform","translateX(110px)")
+    }, 1500)
+    
+
+   })
+    $('.shany').click(function(){
+    $('.xidi').css("transform","translateX(0px)");
+    $('.shany').css("transform","translateX(-110px)")
+   
+    
+
+   })
+})

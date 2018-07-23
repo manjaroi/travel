@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/goodslist.css">
+	<script src="https://cdn.bootcss.com/require.js/2.3.5/require.min.js" data-main="./js/goodslist"></script>
+	<script src="./lib/jquery-3.3.1.js"></script>
+</head>
+<body>
+	<div id="l_main">
+		<div class="container clearfix">
+			<div class="l_left clearfix fl">
+				<p class="l_top">
+					<a href="javascript:;">首页></a>
+					<a href="javascript:;">国内游></a>
+					<a href="javascript:;">海南<i class="arrow"></i>></a>
+					<a href="javascript:;"><span>海南</span>全部线路</a>
+				</p>
+				<div class="l_route fl">
+					<p class="l_all">
+						<a href="javascript:;" class="first">全部线路</a>
+						<a href="javascript:;">跟团游</a>
+						<a href="javascript:;">自由行</a>
+						<a href="javascript:;">当地玩乐</a>
+					</p>
+					<div class="l_city">
+						<p class="first">
+							<span>玩法路线</span>
+							<b>不限</b>
+							<a href="javascript:;"><i>三亚一地</i></a>
+							<a href="javascript:;"><i>三亚+海口</i></a>
+						</p>
+						<p class="second">
+							<span>目的地</span>
+							<b>不限</b>
+							<a href="javascript:;"><b>B</b><i>保亭</i></a>
+							<a href="javascript:;"><b>H</b><i>海口</i></a>
+							<a href="javascript:;"><b>L</b><i>陵水</i></a>
+							<a href="javascript:;"><b>Q</b><i>琼水</i></a>
+							<a href="javascript:;"><b>S</b><i>三亚</i></a>
+							<a href="javascript:;"><b>W</b><i>万宁</i></a>
+							<a href="javascript:;"><b>X</b><i>西沙群岛</i></a>
+						</p>
+						<p>
+							<span>出发时间</span>
+							<b>不限</b>
+							<a href="javascript:;"><i>中秋</i></a>
+							<a href="javascript:;"><i>07月</i></a>
+							<a href="javascript:;"><i>08月</i></a>
+							<a href="javascript:;"><i>09月</i></a>
+							<a href="javascript:;"><i>10月</i></a>
+							<a href="javascript:;"><i>2019年05月</i></a>
+						</p>
+						<p>
+							<span>行程天数</span>
+							<b>不限</b>
+							<a href="javascript:;"><i>3天</i></a>
+							<a href="javascript:;"><i>4天</i></a>
+							<a href="javascript:;"><i>5天</i></a>
+							<a href="javascript:;"><i>6天</i></a>
+							<a href="javascript:;"><i>7天</i></a>
+						</p>
+						<p class="second fl">
+							<span>出发地</span>
+							<b>不限</b>
+							<a href="javascript:;"><b>B</b><i>北京</i></a>
+							<a href="javascript:;"><b>C</b><i>长沙</i></a>
+							<a href="javascript:;"><b>D</b><i>东莞</i></a>
+							<a href="javascript:;"><b>G</b><i>广州</i></a>
+							<a href="javascript:;"><b>H</b><i>海口</i></a>
+							<a href="javascript:;"><i>合肥</i></a>
+							<a href="javascript:;"><i>黄山</i></a>
+							<a href="javascript:;"><b>K</b><i>昆明</i></a>
+							<a href="javascript:;"><b>L</b><i>兰州</i></a>
+							<a href="javascript:;"><b>N</b><i>南宁</i></a>
+							<a href="javascript:;"><b>S</b><i>三亚</i></a>
+							<a href="javascript:;"><i>汕头</i></a>
+						</p>
+						<div class="l_open fl">
+							<a href="javascript:;">展开<i></i></a>
+						</div>
+					</div>
+				</div>
+				<p class="l_general">
+					<a href="javascript:;" class="first">综合</a>
+					<a href="javascript:;">销量</a>
+					<a href="javascript:;" class="last">价格</a>
+					<span><i class="arrow1"></i><i class="arrow2"></i></span>
+				</p>
+				<!--        后端传输数据生成          -->
+				<div class="show"></div>
+				<div class="page">
+					
+				</div>
+			</div>	
+			<div class="l_right fl">
+				<div>
+					<img src="./imgs/l_2.png" alt="">
+				</div>
+				<div class="second">
+					<div class="l_relax">
+						<p>
+							<i></i>
+						</p>
+						<p>	
+							<span>放心游 我们在</span><br>
+							<span>康辉专属客服时刻陪伴您</span>
+						</p>
+					</div>
+					<div class="l_real">
+						<p class="first">
+							<i class="icon1"></i>
+							<span>真实价格、行程完全透明</span>
+						</p>
+						<p>
+							<i class="icon2"></i>
+							<span>专属客服全程服务</span>
+						</p>
+						<p>
+							<i class="icon3"></i>
+							<span>千条路线、覆盖全球</span>
+						</p>
+						<p>
+							<i class="icon4"></i>
+							<span>出境游品牌、服务保障</span>
+						</p>
+					</div>
+				</div>
+				<div class="third">
+					<p>超值热卖</p>
+					<div class="block clearfix">
+						<img src="//i3.cctcdn.com/up/i/1604/14/e02f819a22a8.jpg" alt="">
+						<div class="third_r">
+							<span>黄山市区出发黄山一日游(VIP包团)</span>
+							<span><i>￥</i><i>468</i>起</span>
+						</div>
+					</div>
+					<div class="block clearfix">
+						<img src="//i1.cctcdn.com/up/i/1607/12/09e063ebd32a.jpg" alt="">
+						<div class="third_r">
+							<span><珠三角>广州一天跟团游云台花园+辛亥革命纪念碑</span>
+							<span><i>￥</i><i>198</i>起</span>
+						</div>
+					</div>
+					<div class="block clearfix last">
+						<img src="//i3.cctcdn.com/up/i/1705/24/62bb85585715.jpg" alt="">
+						<div class="third_r">
+							<span><梦绕泰国>深起港止双飞住返泰国曼谷+芭提雅+金龙</span>
+							<span><i>￥</i><i>2380</i>起</span>
+						</div>
+					</div>
+				</div>
+				<div class="third">
+					<p>猜你喜欢</p>
+					<div class="block clearfix">
+						<img src="//i3.cctcdn.com/up/i/1708/10/62bd3316833e.jpg" alt="">
+						<div class="third_r">
+							<span>黄山市区出发黄山一日游(VIP包团)</span>
+							<span><i>￥</i><i>468</i>起</span>
+						</div>
+					</div>
+					<div class="block clearfix">
+						<img src="//i1.cctcdn.com/up/i/1708/10/0ec62510208d.jpg" alt="">
+						<div class="third_r">
+							<span><珠三角>广州一天跟团游云台花园+辛亥革命纪念碑</span>
+							<span><i>￥</i><i>198</i>起</span>
+						</div>
+					</div>
+					<div class="block clearfix">
+						<img src="//i2.cctcdn.com/up/i/1604/13/508547f3fbef16b078b6ce4b66005ee4.jpg" alt="">
+						<div class="third_r">
+							<span><梦绕泰国>深起港止双飞住返泰国曼谷+芭提雅+金龙</span>
+							<span><i>￥</i><i>2380</i>起</span>
+						</div>
+					</div>
+					<div class="block clearfix last">
+						<img src="//i3.cctcdn.com/up/i/1704/18/298cdd7532d8.jpg" alt="">
+						<div class="third_r">
+							<span><梦绕泰国>深起港止双飞住返泰国曼谷+芭提雅+金龙</span>
+							<span><i>￥</i><i>2380</i>起</span>
+						</div>
+					</div>
+				</div>
+				<div class="third read">
+					<p>最近浏览</p>
+					<div class="near"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<div id="l_foot">
+	</div>
+	<div class="w-app-close"></div>
+</body>
+</html>
